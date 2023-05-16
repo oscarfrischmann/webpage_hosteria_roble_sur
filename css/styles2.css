@@ -272,7 +272,7 @@ h2 {
 
 .titulo__secundario--host-espacios {
     width: 70%;
-    margin:0 auto 48px;
+    margin:0 auto 64px;
     line-height: 3.5rem;
     padding-bottom: 10px;
 }
@@ -318,7 +318,13 @@ h2 {
     margin-left: 10px;
 }
 
+.img__last-mobile {
+    margin-bottom: 64px;
+}
 
+.excursiones {
+    margin-bottom: 80px;
+}
 @media (min-width: 768px) {
     main {
         font-weight: 100;
