@@ -21,7 +21,7 @@
             <nav>
                 <ul class="header__navs-pages">
                     <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="la_hosteria.html">La Hostería</a></li>
+                    <li class="active"><a href="la_hosteria.html">La Hostería</a></li>
                     <li><a href="reservas.html">Reservas</a></li>
                     <li><a href="ubicacion.html">Ubicación</a></li>
                     <li><a href="">Fotos</a></li>
@@ -60,7 +60,7 @@
     <!-- LA HOSTERIA START -->
     <main class="hostería__main">
         <section class="hosteria__section--host">
-            <h2 class="titulo__secundario">La Hostería</h2>
+            <h2 class="titulo__secundario">La hostería</h2>
             <article class="hosteria__article hosteria__article--main">
                 <div class="hosteria__contenedor-img hosteria__contenedor-img--main img__full-width">
                     <img src="../img/fuego.jpg"
@@ -117,79 +117,89 @@
                 <article class="habitaciones__card">
                     <h3 class="card__tittle">Suite</h3>
                     <div class="contenedor__card--img">
-                        <img class="img__full-width" src="../img/suite.jpg" alt="Suite con bañera, cama matrimonial y vista al Lago Argentino">
+                        <img class="img__full-width" src="../img/suite.jpg"
+                            alt="Suite con bañera, cama matrimonial y vista al Lago Argentino">
                     </div>
                     <div class="servis">
                         <img class="habitaciones__card-servicios" src="../img/servicios.png" alt="">
                     </div>
-                    <p class="habitaciones__card-parrafo">La suite con jacuzzi es un espacio lujoso y relajante. Además de una cómoda cama, cuenta con un amplio jacuzzi privado para disfrutar de un baño de burbujas rejuvenecedor. Ofrece vistas panorámicas a las montañas o al lago, brindando una experiencia inigualable de confort y tranquilidad.</p>
+                    <p class="habitaciones__card-parrafo">La suite con jacuzzi es un espacio lujoso y relajante. Además
+                        de una cómoda cama, cuenta con un amplio jacuzzi privado para disfrutar de un baño de burbujas
+                        rejuvenecedor. Ofrece vistas panorámicas a las montañas o al lago, brindando una experiencia
+                        inigualable de confort y tranquilidad.</p>
                 </article>
             </div>
         </section>
-        <!-- HABITACIONES END -->
-
 
         <!-- ESPACIOS COMUNES START -->
         <section class="espacios">
-            <article class="encabezado-espacios">
-                <h2 id="espacios">Espacios<br> comunes</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, dolorem laudantium perferendis
+            <article class="espacios__encabezado">
+                <h2 class="titulo__secundario titulo__secundario--host titulo__secundario--host-espacios" id="espacios">
+                    Espacios<br> comunes</h2>
+                <p class="espacios__parrafo hosteria ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                    dolorem
+                    laudantium perferendis
                     cupiditate fuga unde commodi, magni ut natus totam quaerat architecto quos temporibus labore enim
                     quibusdam pariatur qui fugiat accusamus illum saepe voluptatum quidem hic. Ea laboriosam deserunt
                     provident!</p>
             </article>
-            <article class="galeria-espacios">
-                <img class="img1" src="../img/salas_1.jpg" alt="El comedor principal en la noche">
-                <img class="img2" src="../img/salas_2.jpg" alt="Wine Bar">
-                <img class="img3" src="../img/salas_3.jpg" alt="Una de las salas de estar">
-                <img src="../img/salas_4.jpg" alt="El patio interior">
+            <article class="espacios__galeria">
+                <figure>
+                    <img class="img__full-width" src="../img/salas_1.jpg" alt="El comedor principal en la noche">
+                    <figcaption class="espacios__figcaption">Comedor</figcaption>
+                </figure>
+                <figure>
+                    <img class="img__full-width" src="../img/salas_2.jpg" alt="Wine Bar">
+                    <figcaption class="espacios__figcaption">Wine bar</figcaption>
+                </figure>
+                <figure>
+                    <img class="img__full-width" src="../img/salas_3.jpg" alt="Una de las salas de estar">
+                    <figcaption class="espacios__figcaption">Salas de estar</figcaption>
+                </figure>
+                <figure class="img__last-mobile">
+                    <img class="img__full-width" src="../img/salas_4.jpg" alt="El patio interior">
+                    <figcaption class="espacios__figcaption" git>Patio</figcaption>
+                </figure>
             </article>
         </section>
-        <!-- ESPACIOS COMUNES END -->
-
 
         <!-- COMIDAS START -->
         <section class="comidas">
-            <article class="galeria-comidas">
-                <div class="img-comidas1">
-                    <img src="../img/desayuno_1.jpg" alt="El comedor principal en la noche">
-                    <img src="../img/desayuno_2.jpg" alt="El comedor principal en la noche">
-                </div>
-                <div class="img-comidas2">
-                    <img src="../img/desayuno_3.jpg" alt="El comedor principal en la noche">
-                    <img src="../img/desayuno_4.jpg" alt="El comedor principal en la noche">
-                </div>
+            <article class="comidas__encabezado">
+                <h2 class="titulo__secundario titulo__secundario--host titulo__secundario--host-comidas
+                titulo__secundario--host-espacios" id="comidas">
+                    Comidas</h2>
+                <p class="comidas__parrafo hosteria__parrafo--host">La hostería ofrece espacios encantadores para desayunos, almuerzos,
+                    meriendas y cenas. Ambientes acogedores y vistas impresionantes complementan la deliciosa
+                    gastronomía local, creando experiencias culinarias memorables en un entorno idílico.</p>
             </article>
-            <article class="encabezado-comidas">
-                <h2 id="comidas">Comidas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repellendus earum quo omnis
-                    consectetur. Fuga omnis id non itaque quisquam doloremque, iusto vitae excepturi! Tempore illo,
-                    voluptatum aliquam odit quaerat iusto porro corrupti verodolores assumenda neque deserunt
-                    exercitationem? Nemo eius recusandae culpa saepe nam, laborum molestiae ex facere autem?</p>
-            </article>
+            <figure>
+                <img class="img__full-width" src="../img/desayuno_1.jpg" alt="El comedor principal en la noche">
+            </figure>
+            <figure>
+                <img class="img__full-width" src="../img/desayuno_2.jpg" alt="El comedor principal en la noche">
+            </figure>
+            <figure>
+                <img class="img__full-width" src="../img/desayuno_3.jpg" alt="El comedor principal en la noche">
+            </figure>
+            <figure class="img__last-mobile">
+                <img class="img__full-width" src="../img/desayuno_4.jpg" alt="El comedor principal en la noche">
+            </figure>
         </section>
-        <!-- COMIDAS END -->
-
 
         <!-- EXCURSIONES START -->
         <section class="excursiones">
-            <article class="encabezado-excursiones">
-                <h2 id="excursiones">Excursiones</h2>
-                <p>Tenemos para ofrecerle toda la información sobre paseos y excursiones que pueden
-                    realizar en la zona. Los
-                    ayudamos a contratar todos los servicios que necesiten para conocer los lugares más destacados como
-                    <span>
-                        El Glaciar Perito Moreno y otros glaciares</span>, <span>El Chaltén</span> y en<span> El
-                        Calafate</span>.
+            <article class="excursiones__encabezado">
+                <h2 class="titulo__secundario titulo__secundario--host" id="excursiones">Excursiones</h2>
+                <p class="hosteria__parrafo--host">Nuestro equipo se especializa en ayudarte a seleccionar y reservar las mejores excursiones. Con nuestro conocimiento local, te recomendaremos las opciones más fascinantes y emocionantes. Ya sea explorar montañas, navegar por lagos o descubrir glaciares, nos encargaremos de que vivas una experiencia inolvidable.
                 </p>
             </article>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/agQX4woRSZQ"
+            <figure class="contenedor__video--youtube">
+                <iframe  src="https://www.youtube.com/embed/agQX4woRSZQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
-                <!-- pregunta: si el video de youtube funciona en el Live Server de VSC, significa que va a funcionar cuando la página esté cargada en un servidor en internet? -->
-            </div>
+            </figure>
         </section>
         <!-- EXCURSIONES END -->
     </main>
