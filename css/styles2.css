@@ -408,6 +408,7 @@ h2 {
 
 .ubicacion {
     display: grid;
+    grid-template-rows: 1fr 40vh 20vh;
     width: 90vw;
     height: 72vh;
     margin: 0 auto;
@@ -415,8 +416,16 @@ h2 {
 
 .ubicacion__mapa--mobile {
     width: 100%;
+    height: 100%;
+    border-radius: 20px 190px 20px 190px;
     /* width: 893px;
     height: 514px */
+}
+
+.ubicacion__parrafo {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.2rem;
 }
 
 @media (min-width: 768px) {
