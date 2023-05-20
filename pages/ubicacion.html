@@ -6,28 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles2.css">
     <title>Ubicación - Hostería Roble Sur</title>
 </head>
 
 <body>
-    <h1 class="display-none">Hostería Roble Sur</h1>
-    <header>
-        <div class="header-logo">
+    <header class="header">
+        <div class="header__logo">
             <a href="../index.html"><img src="../img/logo.jpg" alt="Logo Hostería Roble Sur"></a>
         </div>
-        <section class="header-section">
+        <section class="header__navs">
             <nav>
-                <ul class="nav">
-                    <li><a href="nosotros.html"">Nosotros</a></li>
-                    <li><a href=" la_hosteria.html">La Hostería</a></li>
+                <ul class="header__navs-pages">
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="la_hosteria.html">La Hostería</a></li>
                     <li><a href="reservas.html">Reservas</a></li>
-                    <li class="li-background"><a href="ubicacion.html">Ubicación</a></li>
+                    <li class="active"><a href="ubicacion.html">Ubicación</a></li>
                     <li><a href="">Fotos</a></li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="lan">
+            <div class="header__navs-lang">
                 <ul>
                     <li><a href="">ENG</a></li>
                     <li><a href="">DEU</a></li>
@@ -35,56 +36,86 @@
                 </ul>
             </div>
         </section>
+        <div class="boostrap__burguer">
+            <div class="dropdown" data-bs-theme="light">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButtonLight"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="header__hamburg" src="../img/menu_boton.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+                    <li><a class="dropdown-item" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="dropdown-item" href="la_hosteria.html">La Hostería</a></li>
+                    <li><a class="dropdown-item" href="reservas.html">Reservas</a></li>
+                    <li><a class="dropdown-item active" href="ubicacion.html">Ubicación</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Fotos</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <hr>
 
-    <main class="main-ubicacion">
-        <iframe class="mapa-principal"
+    <main class="ubicacion">
+        <h2 class="titulo__secundario">Ubicación</h2>
+        <iframe class="ubicacion__mapa--mobile"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2546.2854244056607!2d-72.24446292607443!3d-50.342581548015254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbb9f5c2a217d39%3A0x3394a1174ae6ec55!2sRoble%20Sur!5e0!3m2!1ses-419!2sar!4v1682349066200!5m2!1ses-419!2sar"
-            width="893" height="514" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+             style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"> </iframe>
         <p>Calle Glaciar Río Túnel 210, El Calafate, Provincia de Santa Cruz, República Argentina</p>
     </main>
-    <footer>
-        <div class="footer-nav">
-            <!-- deberían ser articles esto div del footer? Por si ayuda al seo igual le puse un h2 a cada div-->
+    <footer class="footer">
+        <section class="footer__titulos">
+            <h1>Roble Sur</h1>
+            <h2 class="titulo__secundario--footer">Hostería y compañía</h2>
+            <hr>
+        </section>
+        <div class="footer__navs">
             <ul class="ul-nav">
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="la_hosteria.html">La Hostería</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/la_hosteria.html">La Hostería</a></li>
+                <li><a href="./pages/reservas.html">Reservas</a></li>
+                <li><a href="./pages/ubicacion.html">Ubicación</a></li>
                 <li><a href="">Fotos</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
         </div>
-        <div class="footer-media-icons">
-            <h2 class="display-none">Seguinos en</h2>
-            <ul class="icons-flex">
-                <li><img src="../img/facebook_icons.jpg" alt="Ícono de Facebook"></a></li>
+        <div class="footer__media-icons">
+            <h3>Seguinos en</h3>
+            <ul>
+                <li class="footer__media-icons--item"><img src="../img/facebook_icons.jpg" alt="Ícono de Facebook"></a>
+                </li>
                 <li><img src="../img/twitter_icons.jpg" alt="ícono de twitter"></li>
-            </ul>
-            <ul class="icons-flex-2">
-                <li><img src="../img/instagram_icons.jpg" alt="ícono de instagram"></li>
+                <li class="footer__media-icons--item"><img src="../img/instagram_icons.jpg" alt="ícono de instagram">
+                </li>
                 <li><img src="../img/telegram_icons.jpg" alt="ícono de telegram"></li>
             </ul>
         </div>
-        <div class="footer-contact">
-            <h2 class="display-none">Contacto</h2>
-            <ul class="footer-contact ul-contact">
+        <div class="footer__contact">
+            <h3>Contacto</h3>
+            <ul class="footer__contact-list--index">
                 <li><i class="bi bi-telephone"></i><span>+54 02356 35
                         568</span></li>
                 <li><i class="bi bi-whatsapp"></i><span>+54 02356 35 568</span></li>
                 <li><i class="bi bi-envelope-at"></i><span>info@roblesur.com.ar</span></li>
             </ul>
-            </ul>
         </div>
-        <div class="footer-ubicacion">
-            <h2 class="display-none">Ubicación</h2>
-            <div class="footer-map"><img class="footer-map-img" src="../img/mapa_footer.png"
+        <div class="footer__ubicacion">
+            <h3>Ubicación</h3>
+            <div class="footer__map--index"><img class="footer__map-img--index" src="../img/mapa_footer.png"
                     alt="imagen de un mapa con la ubicación de la Hostoría Roble Sur"></div>
-            <p class="adress">Glaciar Río Tunel 2845 <br>Santa Cruz <br>Argentina</p>
+            <p class="footer__adress--index">Glaciar Río Tunel 410 <br>El Calafate <br>Santa Cruz <br>República
+                Argentina</p>
         </div>
+        <p class="copyright--mobil">Oscar Frischmann - WEB DEVELOPER<i class="bi bi-c-circle"></i></p>
+        <p class="copyright--desktop">Oscar Frischmann - WEB DEVELOPER<i class="bi bi-c-circle"></i></p>
+        <div footer__space--mobil></div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
