@@ -46,7 +46,7 @@ hr {
     top: 0px;
     background-color: white;
     z-index: 1;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 .header__navs {
@@ -194,6 +194,7 @@ h2 {
 
 .index div {
     width: 100vw;
+    /* height: auto; */
     /* height:100vh; */
     overflow: hidden;
 }
@@ -204,6 +205,8 @@ h2 {
     /* width: 1920px; */
     height: 90vh;
     object-fit: cover;
+    overflow: hidden;
+
 }
 
 /* ======NOSOTROS====== */
@@ -243,8 +246,8 @@ h2 {
     text-align: center;
     font-weight: normal;
     padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin-bottom: 48px;
+    margin-top: 48px;
 }
 
 
@@ -376,6 +379,7 @@ h2 {
     border-style: groove;
     /* border-color: black; */
     height: 40px;
+    width: 100%;
 }
 
 .reservas__form label {
@@ -384,6 +388,10 @@ h2 {
 
 .reservas__checkbox label {
     display: inline;
+}
+
+form .reservas__date {
+    display: block;
 }
 
 .reservas__botones,
@@ -440,13 +448,18 @@ h2 {
 
     /* =======INDEX====== */
     .index div {
+        margin: 0;
+        padding: 0;
         width: 100vw;
         height: auto;
     }
 
     .index__img-principal {
-        position: unset;
+        position: initial;
         object-fit: cover;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
     }
 
 
@@ -706,6 +719,11 @@ h2 {
 
     /* =====RESERVAS===== */
 
+    .reservas {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
     .section-flex-res {
         display: flex;
         justify-content: space-evenly;
@@ -724,6 +742,16 @@ h2 {
         width: 40vw;
         justify-content: end;
         gap: 15px
+    }
+
+    .reservas__form {
+        padding-top: 164px;
+    }
+
+    /* =====UBICACION===== */
+
+    .ubicacion {
+        width: 70vw;
     }
 
 
@@ -925,11 +953,16 @@ h2 {
 
     /* =====INDEX===== */
 
+    .contenedor__full-width {
+        width: 100vw;
+    }
+
     .index__img-principal {
         width: 100%;
         height: 100%;
         position: initial;
         object-fit: cover;
+        overflow: hidden;
     }
 
 
@@ -992,6 +1025,19 @@ h2 {
         object-fit: cover;
         position: absolute;
         bottom: -60px;
+    }
+
+/* =====RESERVAS===== */
+
+.reservas__form {
+    padding-top: 171px;
+}
+
+
+    /* =====UBICACION===== */
+
+    .ubicacion {
+        width: 50vw;
     }
 
 }
