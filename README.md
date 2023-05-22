@@ -4,7 +4,7 @@
 
 Llevo casi 1 mes y medio aprendiendo HTML y CSS.
 
-En este repositorio subo el proyecto princial realizado para CODERHOUSE aplicando todos los conocimientos que voy adquiriendo:
+En este repositorio subo el proyecto principal realizado para CODERHOUSE aplicando todos los conocimientos que voy adquiriendo:
 
 1. HTML
 2. CSS
