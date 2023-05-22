@@ -24,12 +24,15 @@ hr {
     box-shadow: 2px 2px 10px;
 }
 
-/* h3 {
-    font-size: 4.438rem;
-    font-weight: normal;
-    color: #707070;
-} */
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+}
 
+.parrafo__mobile {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
 
 /* HEADER */
 
@@ -46,17 +49,13 @@ hr {
     top: 0px;
     background-color: white;
     z-index: 1;
-    /* width: 100vw; */
 }
 
 .header__navs {
     display: none;
 }
 
-/* .header__hamburg {
-    display: grid;
-    align-items: center;
-} */
+/* ---BURGER BOSSTRAP--- */
 
 button img {
     width: 50px;
@@ -64,10 +63,7 @@ button img {
 }
 
 .boostrap__burguer {
-
     place-self: center;
-    /* position:fixed;
-    right: 0px; */
 }
 
 .btn {
@@ -78,7 +74,6 @@ button img {
 #dropdownMenuButtonLight {
     background-color: white;
     border: none;
-
 }
 
 .dropdown-menu {
@@ -91,10 +86,10 @@ button img {
 }
 
 /* -------FOOTER-------- */
+
 .footer {
     display: grid;
     grid-template-columns: 100vw;
-    /* grid-template-rows: minmax(100px, 20vh) repeat(2, 1fr); */
 }
 
 .footer__titulos {
@@ -130,7 +125,6 @@ h2 {
     display: none;
 }
 
-
 .footer__media-icons ul {
     display: flex;
     justify-content: center;
@@ -155,7 +149,6 @@ h2 {
     position: relative;
     padding-bottom: 5vh;
     grid-row: 2/3;
-    /* justify-items: center; */
     background-color: #e8e7de95;
 }
 
@@ -187,26 +180,25 @@ h2 {
 
 .footer__space--mobil {
     height: 3vh;
-    /* margin: 5px; */
 }
 
 /* ======INDEX====== */
 
 .index div {
     width: 100vw;
-    /* height: auto; */
-    /* height:100vh; */
     overflow: hidden;
 }
 
-.index__img-principal {
+.index__img-principal--desktop {
+    display: none
+}
+
+.index__img-principal--mobile {
     position: relative;
     left: -300px;
-    /* width: 1920px; */
     height: 90vh;
     object-fit: cover;
     overflow: hidden;
-
 }
 
 /* ======NOSOTROS====== */
@@ -237,10 +229,6 @@ h2 {
     margin-bottom: 60px;
 }
 
-.nosotros__parrafo br {
-    margin-bottom: 16px;
-}
-
 .titulo__secundario {
     font-size: 3.5rem;
     text-align: center;
@@ -249,7 +237,6 @@ h2 {
     margin-bottom: 48px;
     margin-top: 48px;
 }
-
 
 .subtitulo__secundario {
     text-align: center;
@@ -270,10 +257,9 @@ h2 {
 }
 
 .hosteria__parrafo--host {
-    margin: 32px;
+    margin: 32px 0px;
     text-align: left;
     font-size: 1.2rem;
-
 }
 
 .titulo__secundario--host {
@@ -329,10 +315,6 @@ h2 {
     margin-bottom: 3rem;
 }
 
-.espacios__parrafo {
-    display: none;
-}
-
 .espacios__figcaption {
     font-style: oblique;
     margin-left: 10px;
@@ -345,11 +327,11 @@ h2 {
 .excursiones {
     margin-bottom: 80px;
 }
-
-/* .contenedor__video--youtube {
-    width: 100vw;
-    height: auto;
-} */
+.titulo__secundario--excur{
+margin: 0 40px 2rem;
+border-top: 1px solid;
+border-bottom: 1px solid;
+}
 
 .contenedor__video--youtube iframe {
     width: 100%;
@@ -376,8 +358,7 @@ h2 {
 
 .form {
     border-radius: 4.5px;
-    border-style: groove;
-    /* border-color: black; */
+    border-style: solid;
     height: 40px;
     width: 100%;
 }
@@ -408,6 +389,10 @@ form .reservas__date {
     border-radius: 8px;
 }
 
+.boton:active {
+    background-color: rgb(24, 100, 241);
+}
+
 /* =====UBICACION===== */
 
 .footer__ubicacion {
@@ -416,9 +401,9 @@ form .reservas__date {
 
 .ubicacion {
     display: grid;
-    grid-template-rows: 1fr 40vh 20vh;
+    grid-template-rows: 1fr 2fr 1fr;
     width: 90vw;
-    height: 72vh;
+    /* height: 72vh; */
     margin: 0 auto;
 }
 
@@ -426,8 +411,6 @@ form .reservas__date {
     width: 100%;
     height: 100%;
     border-radius: 20px 190px 20px 190px;
-    /* width: 893px;
-    height: 514px */
 }
 
 .ubicacion__parrafo {
@@ -439,7 +422,6 @@ form .reservas__date {
 @media (min-width: 768px) {
     main {
         font-weight: 100;
-        /* background-color: #f8f7f0; */
     }
 
     .boostrap__burguer {
@@ -447,6 +429,7 @@ form .reservas__date {
     }
 
     /* =======INDEX====== */
+
     .index div {
         margin: 0;
         padding: 0;
@@ -454,7 +437,7 @@ form .reservas__date {
         height: auto;
     }
 
-    .index__img-principal {
+    .index__img-principal--mobile {
         position: initial;
         object-fit: cover;
         overflow: hidden;
@@ -462,12 +445,9 @@ form .reservas__date {
         padding: 0;
     }
 
-
-
     /* =====NOSOTROS===== */
 
-
-    /* HEADER */
+    /* ---HEADER--- */
     header,
     nav,
     .header__navs,
@@ -501,8 +481,7 @@ form .reservas__date {
     }
 
     .header__navs-pages li {
-
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         list-style: none;
         background-size: 0px;
         border-radius: 5px;
@@ -526,21 +505,20 @@ form .reservas__date {
         padding-right: 16px;
     }
 
-
-
     /* ======LA HOSTERIA====== */
+
+    .btn-primary {
+        display:initial;
+    }
 
     .hosteria__contenedor-img--mobile {
         display: none;
     }
 
-
-
     .hosteria__article {
         display: grid;
         justify-content: center;
         grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
-
     }
 
     .hosteria__section--host {
@@ -553,25 +531,23 @@ form .reservas__date {
 
     .hosteria__contenedor-img--main {
         width: 100%;
-        /* height: 560px; */
         grid-column: 2/4;
         justify-self: center;
         overflow: hidden;
-
     }
 
     .hosteria__contenedor-img--main img {
         object-fit: cover;
-
     }
 
     .hosteria__parrafo--host {
-        grid-column: -3/-1;
+        grid-column: 2/4;
+        width: 60vw;
     }
-
+    
     .hosteria__parrafo--host p {
-        margin: 16px -38px;
-
+        font-size: 1.2rem;
+        margin: 16px 0 8rem 0;
     }
 
     /* ---HABITACIONES--- */
@@ -582,16 +558,11 @@ form .reservas__date {
         margin: 0;
         width: 60%;
         font-size: 1.2rem;
-
     }
 
     .habitaciones__article--encabezado {
         display: flex;
-        /* align-content: center; */
         width: 90vw;
-        /* margin: 0 auto;
-        margin-top: 64px;
-        margin-bottom: 48px; */
         justify-content: space-around;
         margin: 64px auto 48px auto;
     }
@@ -604,7 +575,7 @@ form .reservas__date {
     .habitaciones__contenedor-card {
         display: grid;
         grid-template-columns: repeat(3, 30vw);
-
+        margin-bottom: 8rem;
         justify-content: center;
         gap: 2vw;
     }
@@ -624,7 +595,6 @@ form .reservas__date {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-
     }
 
     .contenedor__card--img {
@@ -654,7 +624,7 @@ form .reservas__date {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        /* gap: 16px; */
+        margin-bottom: 8rem;
         width: 272%;
         column-gap: 32px;
     }
@@ -666,7 +636,7 @@ form .reservas__date {
         grid-template-columns: repeat(3, 25vw);
         grid-template-rows: repeat(2, 1fr);
         width: 90vw;
-        margin: 0 auto;
+        margin: 0 auto 8rem auto;
         column-gap: 32px;
     }
 
@@ -686,13 +656,11 @@ form .reservas__date {
 
     .comidas__parrafo {
         margin: 0;
+        font-size: 1.2rem;
     }
 
-    /* .comidas img {
-    width: 80%;
-} */
-
     /* ---EXCURSIONES--- */
+
     .excursiones {
         display: flex;
         justify-content: center;
@@ -705,16 +673,15 @@ form .reservas__date {
         height: 315px;
     }
 
-    .hosteria__parrafo--host {
+    .hosteria__parrafo--excur {
         width: 30vw;
         margin-left: 0;
-
+        font-size: 1.2rem;
     }
-
 
     .titulo__secundario--excur {
         text-align: left;
-        ;
+        border: initial;
     }
 
     /* =====RESERVAS===== */
@@ -754,8 +721,8 @@ form .reservas__date {
         width: 70vw;
     }
 
-
     /* =====FOOTER===== */
+
     .copyright--mobil {
         display: none;
     }
@@ -786,7 +753,6 @@ form .reservas__date {
     }
 
     .footer__navs .ul-nav {
-        /* list-style: none; */
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -796,7 +762,6 @@ form .reservas__date {
 
     .footer__media-icons {
         width: 500px;
-        /* padding-top: 95px; */
     }
 
     .footer__media-icons img {
@@ -810,8 +775,6 @@ form .reservas__date {
         grid-template-rows: repeat(2, 1fr);
         gap: 5px;
         margin: 0;
-        /* margin-bottom: 8px;
-        padding-top: 30%; */
     }
 
     .footer__media-icons--item {
@@ -870,9 +833,9 @@ form .reservas__date {
     }
 
     .footer__map-img--index {
-        width: 63%;
+        width: 80%;
         position: unset;
-        margin-left: 18%;
+        /* margin-left: 18%; */
     }
 
     .footer__adress--index {
@@ -888,6 +851,7 @@ form .reservas__date {
 @media (min-width: 1612px) {
 
     /* ------HEADER------ */
+
     /* .header {
         margin-left: 3vw;
     } */
@@ -901,7 +865,7 @@ form .reservas__date {
     }
 
     .header__navs-pages li {
-        font-size: 2.75rem;
+        font-size: 2.5rem;
     }
 
     .header__navs-lang {
@@ -913,8 +877,8 @@ form .reservas__date {
         height: 135px;
     }
 
-
     /* -------FOOTER------- */
+
     .footer__navs {
         background-color: #E8E7DD95;
         width: 347px;
@@ -954,10 +918,11 @@ form .reservas__date {
     /* =====INDEX===== */
 
     .contenedor__full-width {
-        width: 100vw;
+        display: none;
     }
 
-    .index__img-principal {
+    .index__img-principal--desktop {
+        display: block;
         width: 100%;
         height: 100%;
         position: initial;
@@ -965,21 +930,18 @@ form .reservas__date {
         overflow: hidden;
     }
 
-
-
     /* =====NOSOTROS===== */
 
     .nosotros__section {
         display: grid;
         grid-template-columns: 40vw 40vw;
-        grid-template-rows: 20vh 60vh;
+        grid-template-rows: 1fr 3fr;
         grid-template-areas:
             "titulo foto"
             "parrafo foto";
         margin-top: 32px;
         margin-bottom: 70px;
         margin-left: 50px;
-
     }
 
     .nosotros__img {
@@ -996,12 +958,12 @@ form .reservas__date {
 
     .nosotros__parrafo {
         grid-area: parrafo;
-        font-size: 2rem;
     }
 
-    .titulo__secundario {
+    .titulo__secundario--nosotros {
         text-align: left;
         font-size: 4rem;
+        margin-bottom: 16px;
     }
 
     .subtitulo__secundario {
@@ -1027,12 +989,11 @@ form .reservas__date {
         bottom: -60px;
     }
 
-/* =====RESERVAS===== */
+    /* =====RESERVAS===== */
 
-.reservas__form {
-    padding-top: 171px;
-}
-
+    .reservas__form {
+        padding-top: 171px;
+    }
 
     /* =====UBICACION===== */
 
