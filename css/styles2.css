@@ -94,7 +94,7 @@ button img {
 
 .footer__titulos {
     grid-column: 1/2;
-    background-color: #e8e7de95;
+    background-color: #E8E7DD77;
 }
 
 h1 {
@@ -170,7 +170,7 @@ h2 {
 .copyright--mobil {
     text-align: center;
     font-size: 0.7rem;
-    background-color: #e8e7de95;
+    background-color: #E8E7DD77;
     padding: 10px;
 }
 
@@ -395,7 +395,7 @@ form .reservas__date {
 
 /* =====UBICACION===== */
 
-.footer__ubicacion {
+.footer__ubicacion--none {
     display: none;
 }
 
@@ -814,6 +814,8 @@ form .reservas__date {
         display: none;
     }
 
+    
+
     .footer__ubicacion {
         display: flex;
         position: unset;
@@ -846,6 +848,8 @@ form .reservas__date {
         border-radius: 251px;
         width: 200px;
     }
+
+
 }
 
 @media (min-width: 1612px) {
@@ -906,8 +910,10 @@ form .reservas__date {
         align-items: center;
     }
 
-    .footer-map-img--index {
+    .footer__map-img--index {
         width: 320px;
+        margin-top: 0;
+        margin-right: 1rem;
     }
 
     .footer__adress--index {
