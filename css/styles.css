@@ -3,21 +3,26 @@
   padding: 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.5843137255);
-  text-decoration: none;
-  list-style-type: none;
   box-sizing: border-box;
 }
 
 a {
   color: rgba(0, 0, 0, 0.5843137255);
+  text-decoration: none;
 }
 
 ul {
   margin-bottom: 0;
+  list-style-type: none;
 }
 
 hr {
   margin: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
