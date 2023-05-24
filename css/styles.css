@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.5843137255);
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.5843137255);
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+hr {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

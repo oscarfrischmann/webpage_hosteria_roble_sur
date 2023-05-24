@@ -62,7 +62,7 @@ button img {
     height: 40px;
 }
 
-.boostrap__burguer {
+.header__burguer {
     place-self: center;
 }
 
@@ -424,7 +424,7 @@ form .reservas__date {
         font-weight: 100;
     }
 
-    .boostrap__burguer {
+    .header__burguer {
         display: none;
     }
 
