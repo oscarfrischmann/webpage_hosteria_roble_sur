@@ -139,4 +139,25 @@ p {
   display: none;
 }
 
+.contenedor__full-width {
+  width: 100vw;
+}
+
+.img_full-width {
+  width: 100%;
+}
+
+.index__img-principal--desktop {
+  display: none;
+}
+.index__img-principal--mobile {
+  position: relative;
+  left: -371px;
+  height: 90vh;
+  object-fit: cover;
+}
+.index div {
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=styles.css.map */

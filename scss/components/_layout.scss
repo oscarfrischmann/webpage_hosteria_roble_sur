@@ -128,7 +128,7 @@
         &--mobil {
             text-align: center;
             font-size: 0.7rem;
-            background-color: #E8E7DD77;
+            background-color: $footer-color;
             padding: 10px;
         }
 
@@ -136,4 +136,12 @@
             display: none;
         }
     }
+}
+
+.contenedor__full-width {
+    width: 100vw;
+}
+
+.img_full-width {
+    width: 100%;
 }
