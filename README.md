@@ -12,5 +12,7 @@ En este repositorio subo el proyecto principal realizado para CODERHOUSE aplican
   - Grids
   - @Media Queries
   - Bootstrap
+  - SASS
+  - BEM
 
 Hostería Roble Sur V.1.0 beta (22/5/2023)
