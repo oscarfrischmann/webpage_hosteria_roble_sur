@@ -1,0 +1,35 @@
+.nosotros {
+    padding: 0px 7vw;
+
+    &__section {
+        display: grid;
+    }
+
+    &__img {
+        width: 86vw;
+        margin: 0 auto;
+        box-shadow: $box-shadow;
+        margin-bottom: .5rem;
+
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__parrafo {
+        grid-row: 3/4;
+        font-size: 1.2rem;
+        text-align: start;
+        margin-bottom: 60px;
+    }
+
+    &__titulo {
+        margin-bottom: 0;
+    }
+
+    &__subtitulo {
+        font-weight: 300;
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+    }
+}

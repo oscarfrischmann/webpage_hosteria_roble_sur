@@ -28,5 +28,19 @@ p {
 }
 
 $box-shadow: 2px 2px 10px;
-$footer-color: #E8E7DD77
+$footer-color: #E8E7DD77;
 
+
+.titulo__secundario {
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+.subtitulo__secundario {
+    text-align: center;
+    font-weight: 300;
+}
