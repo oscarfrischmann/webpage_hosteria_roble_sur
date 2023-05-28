@@ -18,4 +18,16 @@
     }
 }
 
+@media (min-width: 1380px) {
+    .index__img-principal {
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
 

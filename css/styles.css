@@ -203,6 +203,15 @@ img {
   overflow: hidden;
 }
 
+@media (min-width: 1380px) {
+  .index__img-principal--mobile {
+    display: none;
+  }
+  .index__img-principal--desktop {
+    display: inline-block;
+    width: 100%;
+  }
+}
 .nosotros {
   padding: 0px 7vw;
 }
@@ -275,6 +284,43 @@ img {
 .contenedor__video--youtube iframe {
   width: 100%;
   height: 30vh;
+}
+
+.reservas {
+  width: 90vw;
+  margin: 0 auto 80px auto;
+}
+.reservas__section {
+  display: flex;
+  flex-direction: column;
+}
+.reservas__form--mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reservas__form .display-none {
+  display: none;
+}
+.reservas .form {
+  border-radius: 4.5px;
+  border-style: solid;
+  height: 40px;
+  width: 100%;
+}
+.reservas__botones, .reservas__checkbox {
+  align-self: flex-end;
+}
+.reservas .boton {
+  padding: 5px 8px;
+  background-color: #007BFF;
+  border: none;
+  font-weight: 600;
+  color: aliceblue;
+  border-radius: 8px;
+}
+.reservas .boton:active {
+  background-color: rgb(24, 100, 241);
 }
 
 /*# sourceMappingURL=styles.css.map */
