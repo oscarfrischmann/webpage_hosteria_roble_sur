@@ -157,7 +157,7 @@ img {
   margin: 2vh auto;
   width: 266px;
   height: 266px;
-  background: linear-gradient(140deg, rgb(255, 255, 255), transparent, transparent, rgb(46, 46, 46)), url(../../img/mapa_footer--cuadrado.png);
+  background: linear-gradient(140deg, rgb(255, 255, 255), transparent, transparent, rgb(46, 46, 46)), url(./img/mapa_footer--cuadrado.png);
   box-shadow: inset 0px -30px 50px rgb(66, 65, 65), 10px 10px 10px grey;
 }
 .footer__map--index:active {
@@ -239,6 +239,10 @@ img {
   font-weight: 300;
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.footer__map--index {
+  background: linear-gradient(140deg, rgb(255, 255, 255), transparent, transparent, rgb(46, 46, 46)), url(./img/mapa_footer--cuadrado.png);
 }
 
 .hosteria h2 {
