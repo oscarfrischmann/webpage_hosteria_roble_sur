@@ -1,0 +1,54 @@
+.hosteria h2 {
+        font-family: 'Alex Brush', cursive;
+        font-size: 4.5rem;
+        color: cadetblue;
+        line-height: 2.3rem;
+}
+
+.habitaciones {
+    &__contenedor-card {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 90vw;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        &--servic {
+            display: flex;
+            justify-content: center;
+        }
+
+        &--tittle {
+            padding: 0.5rem;
+            margin-bottom: 0;
+            font-style: oblique;
+            font-weight: 100;
+        }
+
+        &--servic-img {
+            width: 60%;
+            margin: 2.5vh 0;
+        }
+
+        &--parrafo {
+            margin: 0 1rem 1rem 1rem;
+        }
+    }
+}
+
+.espacios {
+
+    &__figcaption {
+        font-style: oblique;
+        margin-left: 10px;
+    }
+}
+
+.contenedor__video--youtube iframe {
+    width: 100%;
+    height: 30vh;
+}

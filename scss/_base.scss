@@ -27,9 +27,11 @@ p {
     line-height: 2rem;
 }
 
-$box-shadow: 2px 2px 10px;
-$footer-color: #E8E7DD77;
+img {
+    vertical-align: unset;
+}
 
+$footer-color: #E8E7DD77;
 
 .titulo__secundario {
     font-size: 3.5rem;
@@ -43,4 +45,21 @@ $footer-color: #E8E7DD77;
 .subtitulo__secundario {
     text-align: center;
     font-weight: 300;
+}
+
+.contenedor__full-width {
+    width: 100vw;
+}
+
+.img__full-width {
+    width: 100%;
+}
+
+.parrafo__mobile {
+    margin: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+.box-shadow {
+    box-shadow: 2px 2px 5px;
 }

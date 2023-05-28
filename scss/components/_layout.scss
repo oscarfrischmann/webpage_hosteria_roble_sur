@@ -119,6 +119,10 @@
             url(../../img/mapa_footer--cuadrado.png);
         box-shadow: inset 0px -30px 50px rgb(66, 65, 65), 10px 10px 10px grey;
 
+        &:active {
+            box-shadow: inset 0px -20px 35px rgb(66, 65, 65);
+            transition: 0.1s;
+        }
     }
 
     &__adress--index {
