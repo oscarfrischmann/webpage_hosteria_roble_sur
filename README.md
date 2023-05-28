@@ -2,7 +2,7 @@
 ### Aprendiendo en **CODERHOUSE**
 
 
-Llevo casi 1 mes y medio aprendiendo HTML y CSS.
+Llevo 1 mes y medio aprendiendo HTML y CSS.
 
 En este repositorio subo el proyecto principal realizado para CODERHOUSE aplicando todos los conocimientos que voy adquiriendo:
 
