@@ -751,7 +751,7 @@ form .reservas__date {
         font-size: 1.188rem;
         display: flex;
     }
-
+/* --OBVIADO-- */
     .footer__navs .ul-nav {
         display: flex;
         flex-direction: column;
@@ -759,10 +759,10 @@ form .reservas__date {
         padding-left: 30%;
         justify-content: center;
     }
-
     .footer__media-icons {
         width: 500px;
     }
+    /* --OBVIADO-- */
 
     .footer__media-icons img {
         width: 45px;
