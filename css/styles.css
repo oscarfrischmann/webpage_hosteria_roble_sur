@@ -62,14 +62,6 @@ img {
   box-shadow: 2px 2px 5px;
 }
 
-.contenedor__full-width {
-  width: 100vw;
-}
-
-.img_full-width {
-  width: 100%;
-}
-
 .header {
   display: flex;
   flex-direction: row;
@@ -348,7 +340,7 @@ img {
   margin-bottom: 2rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .nosotros__section {
     display: grid;
     justify-content: center;
@@ -422,24 +414,36 @@ img {
   height: 30vh;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .hosteria__article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
+    grid-template-rows: 560px auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   .hosteria__contenedor-img--mobile {
     display: none;
   }
   .hosteria__contenedor-img--main {
     width: 100%;
+    height: 560px;
     grid-column: 2/4;
-    justify-self: center;
+    align-self: end;
     overflow: hidden;
+    position: relative;
   }
   .hosteria__contenedor-img--main img {
     object-fit: cover;
+    position: absolute;
+    bottom: -60px;
   }
-  .hosteria__article {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
-    margin-top: 4rem;
+  .hosteria__parrafo {
+    grid-column: -3/-1;
+  }
+  .hosteria__parrafo--desktop {
+    margin: 1rem 0 0 0;
   }
 }
 .reservas {

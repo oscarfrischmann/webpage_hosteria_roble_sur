@@ -58,33 +58,44 @@
 
     .hosteria {
 
+        &__article {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
+            grid-template-rows: 560px auto;
+            margin-top: $margen-main;
+            margin-bottom: $margen-main;
+        }
+
         &__contenedor-img {
             &--mobile {
                 display: none;
             }
 
+
             &--main {
                 width: 100%;
+                height: 560px;
                 grid-column: 2/4;
-                justify-self: center;
+                align-self: end;
                 overflow: hidden;
+                position: relative;
+
 
                 & img {
                     object-fit: cover;
+                    position: absolute;
+                    bottom: -60px;
                 }
             }
         }
 
-        &__article {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
-            margin-top: $margen-main;
+        &__parrafo {
+            grid-column: -3/-1;
 
+            &--desktop {
+                margin: 1rem 0 0 0;
+            }
         }
     }
-
-
-
-
 }
