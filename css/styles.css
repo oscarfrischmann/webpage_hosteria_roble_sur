@@ -415,13 +415,15 @@ img {
 }
 
 @media (min-width: 992px) {
+  .hosteria__section {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
   .hosteria__article {
     display: grid;
     justify-content: center;
     grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
     grid-template-rows: 560px auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
   }
   .hosteria__contenedor-img--mobile {
     display: none;
@@ -430,7 +432,7 @@ img {
     width: 100%;
     height: 560px;
     grid-column: 2/4;
-    align-self: end;
+    justify-content: center;
     overflow: hidden;
     position: relative;
   }
@@ -444,6 +446,28 @@ img {
   }
   .hosteria__parrafo--desktop {
     margin: 1rem 0 0 0;
+  }
+  .habitaciones {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .habitaciones__article--encabezado {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .habitaciones__contenedor-card {
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    gap: 1vw;
+  }
+  .habitaciones__card {
+    grid-template-columns: 100%;
+  }
+  .habitaciones__parrafo {
+    width: 60vw;
+    margin: 0;
   }
 }
 .reservas {
