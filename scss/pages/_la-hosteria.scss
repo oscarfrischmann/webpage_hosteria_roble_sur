@@ -68,6 +68,10 @@
                 grid-column: 2/4;
                 justify-self: center;
                 overflow: hidden;
+
+                & img {
+                    object-fit: cover;
+                }
             }
         }
 

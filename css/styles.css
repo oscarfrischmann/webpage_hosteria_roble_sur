@@ -432,6 +432,9 @@ img {
     justify-self: center;
     overflow: hidden;
   }
+  .hosteria__contenedor-img--main img {
+    object-fit: cover;
+  }
   .hosteria__article {
     display: grid;
     justify-content: center;
