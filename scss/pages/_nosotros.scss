@@ -32,3 +32,44 @@
         margin-bottom: 2rem;
     }
 }
+
+@media (min-width: 768px) {
+
+    .nosotros {
+
+        &__section {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 40vw 40vw;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas:
+                "titulo foto"
+                "parrafo foto";
+            margin-top: $margen-main;
+            margin-bottom: $margen-main;
+        }
+
+        &__img {
+            grid-area: foto;
+            width: 70%;
+        }
+
+        &__titulo {
+            font-family: 'Alex Brush', cursive;
+            font-size: 4.5rem;
+            text-align: start;
+            margin: 0 $margen-main;
+        }
+        &__subtitulo {
+            text-align: start;
+            margin: 0 $margen-main;
+        }
+
+        &__parrafo {
+            grid-area: parrafo;
+            margin: 0 $margen-main;
+            line-height: 2.5rem;
+        }
+    }
+
+}

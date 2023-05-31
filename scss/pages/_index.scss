@@ -18,4 +18,21 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    .index {
+        &__img-principal {
+
+            &--mobile {
+                display: none;
+            }
+
+            &--desktop {
+                display: block;
+            }
+        }
+    }
+
+
+}
 
