@@ -432,14 +432,12 @@ img {
     width: 100%;
     height: 560px;
     grid-column: 2/4;
-    justify-content: center;
+    place-self: end;
     overflow: hidden;
-    position: relative;
   }
   .hosteria__contenedor-img--main img {
     object-fit: cover;
-    position: absolute;
-    bottom: -60px;
+    transform: translateY(-120px);
   }
   .hosteria__parrafo {
     grid-column: -3/-1;
@@ -468,6 +466,22 @@ img {
   .habitaciones__parrafo {
     width: 60vw;
     margin: 0;
+  }
+  .espacios {
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  .espacios__encabezado {
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    float: left;
+  }
+  .espacios__galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    justify-content: center;
+    gap: 30px;
   }
 }
 .reservas {

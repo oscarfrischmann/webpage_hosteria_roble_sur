@@ -68,7 +68,7 @@
             justify-content: center;
             grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
             grid-template-rows: 560px auto;
-            
+
         }
 
         &__contenedor-img {
@@ -81,15 +81,12 @@
                 width: 100%;
                 height: 560px;
                 grid-column: 2/4;
-                justify-content: center;
+                place-self: end;
                 overflow: hidden;
-                position: relative;
-
 
                 & img {
                     object-fit: cover;
-                    position: absolute;
-                    bottom: -60px;
+                    transform: translateY(-120px);
                 }
             }
         }
@@ -113,9 +110,10 @@
                 width: 90vw;
                 margin: 0 auto;
                 justify-content: space-between;
-                
+
             }
         }
+
         &__contenedor-card {
             display: grid;
             grid-template-columns: repeat(3, 30vw);
@@ -124,12 +122,33 @@
 
         &__card {
             grid-template-columns: 100%;
-            
+
+
+
         }
 
         &__parrafo {
             width: 60vw;
             margin: 0;
+        }
+    }
+
+    .espacios {
+        padding-top: $margen-main;
+        margin-bottom: $margen-main;
+
+        &__encabezado {
+            display: flex;
+            flex-direction: column;
+            max-width: 30vw;
+            float: left;
+        }
+
+        &__galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 30vw);
+            justify-content: center;
+            gap: 30px;
         }
     }
 }

@@ -25,7 +25,7 @@ hr {
 }
 
 p {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 2rem;
 }
 
@@ -327,10 +327,11 @@ h2 {
 .excursiones {
     margin-bottom: 80px;
 }
-.titulo__secundario--excur{
-margin: 0 40px 2rem;
-border-top: 1px solid;
-border-bottom: 1px solid;
+
+.titulo__secundario--excur {
+    margin: 0 40px 2rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .contenedor__video--youtube iframe {
@@ -508,7 +509,7 @@ form .reservas__date {
     /* ======LA HOSTERIA====== */
 
     .btn-primary {
-        display:initial;
+        display: initial;
     }
 
     .hosteria__contenedor-img--mobile {
@@ -544,7 +545,7 @@ form .reservas__date {
         grid-column: 2/4;
         width: 60vw;
     }
-    
+
     .hosteria__parrafo--host p {
         font-size: 1.2rem;
         margin: 16px 0 8rem 0;
@@ -751,7 +752,8 @@ form .reservas__date {
         font-size: 1.188rem;
         display: flex;
     }
-/* --OBVIADO-- */
+
+    /* --OBVIADO-- */
     .footer__navs .ul-nav {
         display: flex;
         flex-direction: column;
@@ -759,9 +761,11 @@ form .reservas__date {
         padding-left: 30%;
         justify-content: center;
     }
+
     .footer__media-icons {
         width: 500px;
     }
+
     /* --OBVIADO-- */
 
     .footer__media-icons img {
@@ -814,7 +818,7 @@ form .reservas__date {
         display: none;
     }
 
-    
+
 
     .footer__ubicacion {
         display: flex;
