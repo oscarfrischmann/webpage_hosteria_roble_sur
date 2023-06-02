@@ -459,9 +459,10 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 30vw);
     gap: 1vw;
+    justify-content: center;
   }
   .habitaciones__card {
-    grid-template-columns: 100%;
+    display: unset;
   }
   .habitaciones__parrafo {
     width: 60vw;
@@ -482,6 +483,25 @@ img {
     grid-template-columns: repeat(2, 30vw);
     justify-content: center;
     gap: 30px;
+  }
+  .comidas {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 4rem;
+  }
+  .comidas__encabezado {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .comidas__figure--anteultima {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .comidas__figure--ultima {
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 }
 .reservas {
