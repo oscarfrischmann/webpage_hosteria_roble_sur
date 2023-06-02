@@ -14,6 +14,7 @@
             flex-direction: column;
             gap: 16px;
         }
+
         & .display-none {
             display: none;
         }
@@ -30,17 +31,46 @@
     &__checkbox {
         align-self: flex-end;
     }
-    
+
     & .boton {
         padding: 5px 8px;
-    background-color: #007BFF;
-    border: none;
-    font-weight: 600;
-    color: aliceblue;
-    border-radius: 8px;
+        background-color: #007BFF;
+        border: none;
+        font-weight: 600;
+        color: aliceblue;
+        border-radius: 8px;
 
-    &:active {
-        background-color: rgb(24, 100, 241);
+        &:active {
+            background-color: rgb(24, 100, 241);
+        }
     }
+}
+
+@media (min-width: $breakpoint1) {
+
+    .reservas {
+        &__section {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: end;
+        }
+
+        &__titulo {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img {
+            background-image: url(../img/26.jpg);
+            background-position: 39% 50%;
+            background-size: 1700px;
+            width: 554px;
+            height: 560px;
+        }
+
+        &__form {
+            width: 40vw;
+            padding-bottom: 2.5rem;
+        }
     }
 }

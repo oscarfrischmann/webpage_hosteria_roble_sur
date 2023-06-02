@@ -560,6 +560,28 @@ figure {
   background-color: rgb(24, 100, 241);
 }
 
+@media (min-width: 992px) {
+  .reservas__section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+  }
+  .reservas__titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .reservas__img {
+    background-image: url(../img/26.jpg);
+    background-position: 39% 50%;
+    background-size: 1700px;
+    width: 554px;
+    height: 560px;
+  }
+  .reservas__form {
+    width: 40vw;
+    padding-bottom: 2.5rem;
+  }
+}
 .ubicacion {
   display: grid;
   grid-template-rows: 1fr 2fr 1fr;
