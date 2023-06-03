@@ -564,11 +564,12 @@ figure {
   .reservas__section {
     flex-direction: row;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-start;
   }
   .reservas__titulo {
     display: flex;
     flex-direction: column;
+    justify-content: start;
   }
   .reservas__img {
     background-image: url(../img/26.jpg);
@@ -579,7 +580,7 @@ figure {
   }
   .reservas__form {
     width: 40vw;
-    padding-bottom: 2.5rem;
+    margin-top: 160px;
   }
 }
 .ubicacion {
@@ -597,6 +598,19 @@ figure {
   text-align: center;
   margin-top: 16px;
   font-size: 1.2rem;
+}
+
+@media (min-width: 992px) {
+  .ubicacion {
+    grid-template-rows: 1fr 3fr 1fr;
+    width: 50vw;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__ubicacion--none {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,3 +18,19 @@
         font-size: 1.2rem;
     }
 }
+
+@media (min-width:$breakpoint1) {
+
+.ubicacion {
+    grid-template-rows: 1fr 3fr 1fr;
+    width:50vw;
+    
+}
+
+    .footer {
+        grid-template-columns: repeat(3, 1fr);
+        &__ubicacion--none {
+                display: none;
+        }
+    }
+}

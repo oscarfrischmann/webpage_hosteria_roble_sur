@@ -52,12 +52,13 @@
         &__section {
             flex-direction: row;
             justify-content: space-around;
-            align-items: end;
+            align-items: flex-start;
         }
 
         &__titulo {
             display: flex;
             flex-direction: column;
+            justify-content: start;
         }
 
         &__img {
@@ -70,7 +71,7 @@
 
         &__form {
             width: 40vw;
-            padding-bottom: 2.5rem;
+            margin-top: 160px;
         }
     }
 }
