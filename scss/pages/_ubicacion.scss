@@ -21,16 +21,22 @@
 
 @media (min-width:$breakpoint1) {
 
-.ubicacion {
-    grid-template-rows: 1fr 3fr 1fr;
-    width:50vw;
-    
-}
+    .ubicacion {
+        grid-template-rows: 1fr 3fr 1fr;
+        width: 50vw;
+
+    }
 
     .footer {
-        grid-template-columns: repeat(3, 1fr);
-        &__ubicacion--none {
+        &__ubicacion {
+            
+            &--ubic {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &--none {
                 display: none;
+            }
         }
     }
 }

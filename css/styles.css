@@ -222,7 +222,7 @@ figure {
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 2fr;
@@ -605,7 +605,7 @@ figure {
     grid-template-rows: 1fr 3fr 1fr;
     width: 50vw;
   }
-  .footer {
+  .footer__ubicacion--ubic {
     grid-template-columns: repeat(3, 1fr);
   }
   .footer__ubicacion--none {
