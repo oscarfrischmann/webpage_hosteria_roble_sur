@@ -23,7 +23,8 @@
     }
 
     &__titulo {
-        margin-bottom: 0;
+        @include titulo__secundario;
+        // margin-bottom: 0;
     }
 
     &__subtitulo {
@@ -55,10 +56,9 @@
         }
 
         &__titulo {
-            font-family: 'Alex Brush', cursive;
-            font-size: 4.5rem;
             text-align: start;
             margin: 0 $margen-main;
+            line-height: unset;
         }
         &__subtitulo {
             text-align: start;

@@ -1,9 +1,5 @@
 .hosteria h2 {
-    font-family: 'Alex Brush', cursive;
-    font-size: 4.5rem;
-    line-height: 2.3rem;
-    // text-shadow: 1px 3px 8px;
-    // text-decoration: underline 1px;
+    @include titulo__secundario;
 }
 
 .habitaciones {
@@ -19,8 +15,7 @@
         margin-bottom: 1rem;
 
         &--servic {
-            display: flex;
-            justify-content: center;
+            @include flex-center;
         }
 
         &--tittle {
@@ -46,6 +41,10 @@
     &__figcaption {
         font-style: oblique;
         margin-left: 10px;
+    }
+
+    h2 {
+        line-height: 2.3rem;
     }
 }
 
@@ -199,8 +198,7 @@
     }
 
     .excursiones {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 32px;
         width: 75vw;
         margin: 0 auto;

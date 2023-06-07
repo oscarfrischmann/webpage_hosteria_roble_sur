@@ -40,7 +40,7 @@
     background-color: $footer-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint1) {
 
     .header {
         display: flex;

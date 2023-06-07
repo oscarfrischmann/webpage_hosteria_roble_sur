@@ -1,3 +1,22 @@
+$footer-color: #E8E7DD77;
+$margen-main: 4rem;
+$breakpoint1: 992px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin titulo__secundario {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -31,18 +50,15 @@ figure {
     margin: 0;
 }
 
-$footer-color: #E8E7DD77;
-$margen-main: 4rem;
-$breakpoint1: 992px;
 
-.titulo__secundario {
-    font-size: 3.5rem;
-    text-align: center;
-    font-weight: normal;
-    padding-bottom: 0px;
-    margin-bottom: 48px;
-    margin-top: 48px;
-}
+// .titulo__secundario {
+//     font-size: 3.5rem;
+//     text-align: center;
+//     font-weight: normal;
+//     padding-bottom: 0px;
+//     margin-bottom: 48px;
+//     margin-top: 48px;
+// }
 
 .subtitulo__secundario {
     text-align: center;
@@ -65,4 +81,3 @@ $breakpoint1: 992px;
 .box-shadow {
     box-shadow: 2px 2px 5px;
 }
-

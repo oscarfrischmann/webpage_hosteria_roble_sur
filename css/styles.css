@@ -31,15 +31,6 @@ figure {
   margin: 0;
 }
 
-.titulo__secundario {
-  font-size: 3.5rem;
-  text-align: center;
-  font-weight: normal;
-  padding-bottom: 0px;
-  margin-bottom: 48px;
-  margin-top: 48px;
-}
-
 .subtitulo__secundario {
   text-align: center;
   font-weight: 300;
@@ -100,7 +91,7 @@ figure {
   background-color: rgba(232, 231, 221, 0.4666666667);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header {
     display: flex;
     align-items: center;
@@ -236,10 +227,10 @@ figure {
   }
   .footer__navs {
     display: flex;
+    justify-content: center;
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
-    justify-content: center;
   }
   .footer__navs ul {
     place-self: center;
@@ -263,17 +254,17 @@ figure {
     height: 270px;
     font-size: 1.5rem;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     line-height: 2.5rem;
   }
   .footer__ubicacion {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     position: unset;
     height: 270px;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: white;
@@ -332,7 +323,13 @@ figure {
   margin-bottom: 60px;
 }
 .nosotros__titulo {
-  margin-bottom: 0;
+  font-family: "Alex Brush", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 0px;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 .nosotros__subtitulo {
   font-weight: 300;
@@ -355,10 +352,9 @@ figure {
     width: 70%;
   }
   .nosotros__titulo {
-    font-family: "Alex Brush", cursive;
-    font-size: 4.5rem;
     text-align: start;
     margin: 0 4rem;
+    line-height: unset;
   }
   .nosotros__subtitulo {
     text-align: start;
@@ -373,7 +369,11 @@ figure {
 .hosteria h2 {
   font-family: "Alex Brush", cursive;
   font-size: 4.5rem;
-  line-height: 2.3rem;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 0px;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 .habitaciones__contenedor-card {
@@ -407,6 +407,9 @@ figure {
 .espacios__figcaption {
   font-style: oblique;
   margin-left: 10px;
+}
+.espacios h2 {
+  line-height: 2.3rem;
 }
 
 .comidas img {
@@ -538,6 +541,15 @@ figure {
   display: flex;
   flex-direction: column;
 }
+.reservas h2 {
+  font-family: "Alex Brush", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 0px;
+  margin-bottom: 48px;
+  margin-top: 48px;
+}
 .reservas__form--mobile {
   display: flex;
   flex-direction: column;
@@ -605,6 +617,16 @@ figure {
   text-align: center;
   margin-top: 16px;
   font-size: 1.2rem;
+}
+
+h2 {
+  font-family: "Alex Brush", cursive;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 0px;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 
 @media (min-width: 992px) {

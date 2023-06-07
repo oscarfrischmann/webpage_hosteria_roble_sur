@@ -36,8 +36,7 @@
 
     &__media-icons {
         ul {
-            display: flex;
-            justify-content: center;
+            @include flex-center;
             margin: 4vh;
             gap: 3vw;
         }
@@ -121,12 +120,11 @@
         }
 
         &__navs {
-            display: flex;
+            @include flex-center;
             background-color: #E8E7DD95;
             // width: 25vw;
             height: 270px;
             font-size: 1.5rem;
-            justify-content: center;
 
             & ul {
                 place-self: center;
@@ -161,19 +159,17 @@
             background-color: #E8E7DD95;
             height: 270px;
             font-size: 1.5rem;
-            display: flex;
+            @include flex-center;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             line-height: 2.5rem;
         }
 
         &__ubicacion {
-            display: flex;
+            @include flex-center;
             flex-direction: row;
             position: unset;
             height: 270px;
-            justify-content: center;
             align-items: center;
             gap: 10px;
             background-color: white;

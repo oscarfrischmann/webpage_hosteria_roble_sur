@@ -10,13 +10,17 @@
             height: 100%;
             border-radius: 20px 190px 20px 190px;
         }
-    }
 
+    }
+    
     &__parrafo {
         text-align: center;
         margin-top: 16px;
         font-size: 1.2rem;
     }
+}
+h2 {
+    @include titulo__secundario;
 }
 
 @media (min-width:$breakpoint1) {

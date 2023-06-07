@@ -7,6 +7,10 @@
         flex-direction: column;
     }
 
+    h2 {
+        @include titulo__secundario;
+    }
+
     &__form {
 
         &--mobile {
