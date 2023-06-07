@@ -429,6 +429,13 @@ figure {
     grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
     grid-template-rows: 560px auto;
   }
+  .hosteria__article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2/span 2;
+    grid-row: 1/2;
+  }
   .hosteria__contenedor-img--mobile {
     display: none;
   }
