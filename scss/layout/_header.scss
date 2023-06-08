@@ -40,6 +40,7 @@
     background-color: $footer-color;
 }
 
+
 @media (min-width: $breakpoint1) {
 
     .header {
@@ -58,7 +59,7 @@
         &__navs {
             display: flex;
             align-items: center;
-            gap:30px;
+            gap: 30px;
 
             &-pages {
                 display: flex;
@@ -66,7 +67,7 @@
                 gap: 2px;
 
                 & li {
-                    font-size: 2rem;
+                    font-size: 1.2rem;
                     background-size: 0px;
                     border-radius: 5px;
                     transition: font-size 3s, background 1s;
@@ -87,15 +88,12 @@
             }
         }
     }
+}
 
-
-
-
-
-
-
-
-
+@media (min-width: 1296px) {
+    .header__navs-pages li {
+        font-size: 2rem;
+    }
 }
 
 // .index__img-principal {
