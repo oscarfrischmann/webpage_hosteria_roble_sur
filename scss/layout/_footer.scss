@@ -6,10 +6,12 @@
         background-color: $footer-color;
 
         h1 {
+            font-family: dearJoe;
             text-align: center;
             font-size: 4rem;
             font-weight: normal;
-            margin: 2rem;
+            font-style: italic;
+            margin: 2rem 0 0 0;
         }
 
         h2 {
@@ -116,7 +118,7 @@
     }
 }
 
-@media (min-width:$breakpoint1) {
+@media (min-width:map-get($break, "inter")) {
 
     .footer {
         display: grid;

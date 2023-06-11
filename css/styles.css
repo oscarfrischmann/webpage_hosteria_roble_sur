@@ -1,3 +1,7 @@
+@font-face {
+  font-family: dearJoe;
+  src: url(./fonts/dearJoe1.ttf);
+}
 @keyframes rot55 {
   to {
     transform: rotate(360deg);
@@ -163,10 +167,12 @@ figure {
   background-color: rgba(232, 231, 221, 0.4666666667);
 }
 .footer__titulos h1 {
+  font-family: dearJoe;
   text-align: center;
   font-size: 4rem;
   font-weight: normal;
-  margin: 2rem;
+  font-style: italic;
+  margin: 2rem 0 0 0;
 }
 .footer__titulos h2 {
   text-align: center;
@@ -682,7 +688,7 @@ h2 {
   margin-top: 48px;
 }
 
-@media (min-width: ) {
+@media (min-width: 768px) {
   .ubicacion {
     grid-template-rows: 1fr 3fr 1fr;
     width: 50vw;

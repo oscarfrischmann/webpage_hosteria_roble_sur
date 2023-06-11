@@ -23,7 +23,7 @@ h2 {
     @include titulo__secundario;
 }
 
-@media (min-width:map-get($break, "Inter")) {
+@media (min-width: map-get($break, "tablet")) {
 
     .ubicacion {
         grid-template-rows: 1fr 3fr 1fr;
