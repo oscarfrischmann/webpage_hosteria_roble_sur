@@ -1,7 +1,15 @@
 $footer-color: #E8E7DD77;
 $margen-main: 4rem;
+
+
 $breakpoint1: 992px;
 $breakpoint: 768px;
+
+$break: (
+    tablet: 768px,
+    inter: 992px,
+    desktop: 1296px,
+);
 
 @mixin flex($justify, $align, $direction) {
     display: flex;

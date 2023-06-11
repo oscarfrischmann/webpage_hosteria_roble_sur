@@ -10,20 +10,20 @@
             height: 100%;
             border-radius: 20px 190px 20px 190px;
         }
-
     }
-    
+
     &__parrafo {
         text-align: center;
         margin-top: 16px;
         font-size: 1.2rem;
     }
 }
+
 h2 {
     @include titulo__secundario;
 }
 
-@media (min-width:$breakpoint1) {
+@media (min-width:map-get($break, "Inter")) {
 
     .ubicacion {
         grid-template-rows: 1fr 3fr 1fr;
@@ -33,7 +33,7 @@ h2 {
 
     .footer {
         &__ubicacion {
-            
+
             &--ubic {
                 grid-template-columns: repeat(3, 1fr);
             }

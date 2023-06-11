@@ -59,7 +59,7 @@
     height: 30vh;
 }
 
-@media (min-width: $breakpoint1) {
+@media (min-width:map-get($break, "tablet")) {
 
     .hosteria {
 

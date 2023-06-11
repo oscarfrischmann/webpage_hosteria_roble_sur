@@ -38,8 +38,7 @@
     background-color: $footer-color;
 }
 
-
-@media (min-width: $breakpoint1) {
+@media (min-width: map-get($break, "tablet")) {
 
     .header {
         @include flex(space-between, center, initial);
@@ -65,7 +64,7 @@
                     background-size: 0px;
                     border-radius: 5px;
                     transition: font-size 3s, background 1s;
-                    padding: 25px;
+                    padding: 8px;
 
                     &:hover {
                         background-color: rgba(134, 124, 167, 0.314);
@@ -81,20 +80,16 @@
         }
     }
 }
-
-@media (min-width: 1296px) {
+@media (min-width: map-get($break, "inter")){
+    .header__navs-pages li {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    
+}
+@media (min-width: map-get($break, "desktop")) {
     .header__navs-pages li {
         font-size: 2rem;
+        padding: 23px;
     }
 }
-
-// .index__img-principal {
-//         &--mobile {
-//             display: none;
-//         }
-
-//         &--desktop {
-//             display: inline-block;
-//             width: 100%;
-//         }
-//     }

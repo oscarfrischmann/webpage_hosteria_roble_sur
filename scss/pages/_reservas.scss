@@ -48,7 +48,7 @@
     }
 }
 
-@media (min-width: $breakpoint1) {
+@media (min-width: map-get($break, "inter")) {
 
     .reservas {
         &__section {
