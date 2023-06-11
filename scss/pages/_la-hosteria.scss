@@ -15,7 +15,7 @@
         margin-bottom: 1rem;
 
         &--servic {
-            @include flex-center;
+            @include flex(center, initial, initial);
         }
 
         &--tittle {
@@ -119,11 +119,9 @@
 
         &__article {
             &--encabezado {
-                display: flex;
+                @include flex(space-around, center, inherit);
                 width: 90vw;
                 margin: 0 auto;
-                justify-content: space-between;
-
             }
         }
 
@@ -151,11 +149,7 @@
         
 
         &__encabezado {
-            display: flex;
-            flex-direction: column;
-            // max-width: 30vw;
-            // float: left;
-            // padding-left: $margen-main;
+            @include flex(inherit, inherit, column);
         }
 
         &__galeria {
@@ -198,7 +192,7 @@
     }
 
     .excursiones {
-        @include flex-center;
+        @include flex(center, initial, inherit);
         gap: 32px;
         width: 75vw;
         margin: 0 auto;

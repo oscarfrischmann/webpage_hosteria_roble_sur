@@ -1,7 +1,5 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex(space-between, initial, row);
     position: sticky;
     top: 0px;
     background-color: white;
@@ -44,9 +42,7 @@
 @media (min-width: $breakpoint1) {
 
     .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flex(space-between, center, initial);
 
         &__burger {
             display: none;
@@ -57,13 +53,11 @@
         }
 
         &__navs {
-            display: flex;
-            align-items: center;
+            @include flex(inherit, center,inherit);
             gap: 30px;
 
             &-pages {
-                display: flex;
-                align-items: center;
+                @include flex(inherit, center,inherit);
                 gap: 2px;
 
                 & li {
@@ -81,9 +75,7 @@
             }
 
             &-lang ul {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                @include flex(inherit, center, column);
                 margin-right: 30px;
             }
         }

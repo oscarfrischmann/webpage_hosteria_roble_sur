@@ -3,8 +3,7 @@
     margin: 0 auto 80px auto;
 
     &__section {
-        display: flex;
-        flex-direction: column;
+        @include flex(inherit, initial, column);
     }
 
     h2 {
@@ -14,8 +13,7 @@
     &__form {
 
         &--mobile {
-            display: flex;
-            flex-direction: column;
+            @include flex(inherit, initial, column);
             gap: 16px;
         }
 
@@ -54,15 +52,11 @@
 
     .reservas {
         &__section {
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: flex-start;
+            @include flex(space-around, flex-start, row);
         }
 
         &__titulo {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
+            @include flex(start, initial, column);
         }
 
         &__img {
