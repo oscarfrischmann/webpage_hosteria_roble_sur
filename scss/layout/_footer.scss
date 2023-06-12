@@ -133,7 +133,7 @@
         }
 
         &__titulos {
-            display: none;
+            @include clipped;
         }
 
         &__navs {

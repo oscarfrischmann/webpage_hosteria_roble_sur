@@ -1,12 +1,10 @@
 $footer-color: #E8E7DD77;
 $margen-main: 4rem;
+
 @font-face {
     font-family: dearJoe;
     src: url(./fonts/dearJoe1.ttf);
 }
-
-// $breakpoint1: 992px;
-// $breakpoint: 768px;
 
 $break: (
     tablet: 768px,
@@ -33,9 +31,22 @@ $break: (
 
 @keyframes rot55 {
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+@mixin clipped {
+    clip: rect(0 0 0 0);
+    border: 0;
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    display: block;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    z-index: -1;
+    }
 
 * {
     margin: 0px;
@@ -62,23 +73,13 @@ hr {
 }
 
 p {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 2rem;
 }
 
 figure {
     margin: 0;
 }
-
-
-// .titulo__secundario {
-//     font-size: 3.5rem;
-//     text-align: center;
-//     font-weight: normal;
-//     padding-bottom: 0px;
-//     margin-bottom: 48px;
-//     margin-top: 48px;
-// }
 
 .subtitulo__secundario {
     text-align: center;
