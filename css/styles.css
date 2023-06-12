@@ -62,6 +62,10 @@ figure {
   box-shadow: 2px 2px 5px;
 }
 
+.contenedor__full-widt {
+  width: 100%;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
