@@ -437,6 +437,7 @@ figure {
 .habitaciones__contenedor-card {
   width: 90vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 .habitaciones__card {
   display: grid;
