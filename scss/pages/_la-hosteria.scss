@@ -2,8 +2,6 @@
     @include titulo__secundario;
 }
 
-
-
 .espacios {
 
     &__figcaption {
@@ -89,7 +87,7 @@
             &--encabezado {
                 @include flex(space-around, center, inherit);
                 width: 90vw;
-                margin: 0 auto;
+                margin: 0 auto 1rem;
             }
         }
 
@@ -101,11 +99,96 @@
 
     .espacios {
         padding: $margen-main;
-        display: flex;
+        @include flex(center, center, column);
         
-
+        h2 {
+            margin-top: 0;
+        }
+        
         &__encabezado {
             @include flex(inherit, inherit, column);
+        }
+
+        &__galeria {
+            display: grid;
+            grid-template-columns: repeat(2, 40vw);
+            margin: 0 auto;
+            column-gap: 30px;
+            row-gap: 10px;
+        }
+
+        &__parrafo {
+            margin: 0 auto 2rem auto;
+            width:83vw;
+        }
+    }
+
+    .comidas {
+
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: auto, repeat(2, 1fr);
+        padding: $margen-main 0;
+
+        &__encabezado {
+            @include flex(center, center, row);
+            grid-column: 1/3;
+            // grid-row: 1/3;
+        }
+
+        &__figure {
+            &--anteultima {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &--ultima {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+        }
+
+        & img {
+            margin-bottom: 0;
+        }
+    }
+
+    .excursiones {
+        @include flex(center, initial, inherit);
+        gap: 32px;
+        width: 75vw;
+        margin: 0 auto;
+        padding: $margen-main;
+
+        &__video--youtube {
+            & iframe {
+                width: 560px;
+                height: 315px;
+            }
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (min-width:map-get($break, "desktop")) {
+
+
+    .espacios {
+        padding: $margen-main;
+        
+        @include flex(space-between, center, row);
+
+        &__parrafo {
+            width: 90%;
+        }
+
+        &__encabezado {
+            align-self: flex-start;
         }
 
         &__galeria {
@@ -127,8 +210,9 @@
         padding: $margen-main 0;
 
         &__encabezado {
-            grid-column: 3/4;
+            @include flex(flex-start, center, column);
             grid-row: 1/3;
+            grid-column: 3/4;
         }
 
         &__figure {
@@ -142,26 +226,9 @@
                 grid-row: 2/3;
             }
         }
+
         & img {
             margin-bottom: 0;
-        }
-    }
-
-    .excursiones {
-        @include flex(center, initial, inherit);
-        gap: 32px;
-        width: 75vw;
-        margin: 0 auto;
-        padding: $margen-main;
-
-        &__video--youtube {
-            & iframe {
-                width: 560px;
-                height: 315px;
-            }
-        }
-        h2 {
-            margin-top: 0;
         }
     }
 }

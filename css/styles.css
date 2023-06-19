@@ -541,7 +541,7 @@ figure {
     align-items: center;
     flex-direction: inherit;
     width: 90vw;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
   }
   .habitaciones__parrafo {
     width: 60vw;
@@ -550,6 +550,12 @@ figure {
   .espacios {
     padding: 4rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .espacios h2 {
+    margin-top: 0;
   }
   .espacios__encabezado {
     display: flex;
@@ -559,22 +565,29 @@ figure {
   }
   .espacios__galeria {
     display: grid;
-    grid-template-columns: repeat(2, 30vw);
-    justify-content: center;
+    grid-template-columns: repeat(2, 40vw);
+    margin: 0 auto;
     column-gap: 30px;
     row-gap: 10px;
+  }
+  .espacios__parrafo {
+    margin: 0 auto 2rem auto;
+    width: 83vw;
   }
   .comidas {
     display: grid;
     gap: 20px;
     justify-content: center;
-    grid-template-columns: repeat(3, 25vw);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 40vw);
+    grid-template-rows: auto, repeat(2, 1fr);
     padding: 4rem 0;
   }
   .comidas__encabezado {
-    grid-column: 3/4;
-    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    grid-column: 1/3;
   }
   .comidas__figure--anteultima {
     grid-column: 1/2;
@@ -603,6 +616,55 @@ figure {
   }
   .excursiones h2 {
     margin-top: 0;
+  }
+}
+@media (min-width: 1296px) {
+  .espacios {
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .espacios__parrafo {
+    width: 90%;
+  }
+  .espacios__encabezado {
+    align-self: flex-start;
+  }
+  .espacios__galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 10px;
+  }
+  .comidas {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 4rem 0;
+  }
+  .comidas__encabezado {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    grid-row: 1/3;
+    grid-column: 3/4;
+  }
+  .comidas__figure--anteultima {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .comidas__figure--ultima {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .comidas img {
+    margin-bottom: 0;
   }
 }
 .reservas {
