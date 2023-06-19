@@ -339,6 +339,48 @@ figure {
     align-self: center;
   }
 }
+.habitaciones__contenedor-card {
+  width: 90vw;
+  margin: 0 auto;
+}
+.habitaciones__card {
+  display: grid;
+  grid-template-columns: 90vw;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.habitaciones__card--servic {
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+  flex-direction: initial;
+}
+.habitaciones__card--tittle {
+  padding: 0.5rem;
+  margin-bottom: 0;
+  font-style: oblique;
+  font-weight: 100;
+}
+.habitaciones__card--servic-img {
+  width: 60%;
+  margin: 2.5vh 0;
+}
+.habitaciones__card--parrafo {
+  margin: 0 1rem 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .habitaciones__contenedor-card {
+    display: grid;
+    grid-template-columns: repeat(3, 28vw);
+    gap: 1vw;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .habitaciones__card {
+    display: unset;
+  }
+}
 .index__img-principal--desktop {
   display: none;
 }
@@ -434,37 +476,6 @@ figure {
   margin-top: 48px;
 }
 
-.habitaciones__contenedor-card {
-  width: 100vw;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.habitaciones__card {
-  display: grid;
-  grid-template-columns: 90vw;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-.habitaciones__card--servic {
-  display: flex;
-  justify-content: center;
-  align-items: initial;
-  flex-direction: initial;
-}
-.habitaciones__card--tittle {
-  padding: 0.5rem;
-  margin-bottom: 0;
-  font-style: oblique;
-  font-weight: 100;
-}
-.habitaciones__card--servic-img {
-  width: 60%;
-  margin: 2.5vh 0;
-}
-.habitaciones__card--parrafo {
-  margin: 0 1rem 1rem 1rem;
-}
-
 .espacios__figcaption {
   font-style: oblique;
   margin-left: 10px;
@@ -531,15 +542,6 @@ figure {
     flex-direction: inherit;
     width: 90vw;
     margin: 0 auto;
-  }
-  .habitaciones__contenedor-card {
-    display: grid;
-    grid-template-columns: repeat(3, 30vw);
-    gap: 1vw;
-    justify-content: center;
-  }
-  .habitaciones__card {
-    display: unset;
   }
   .habitaciones__parrafo {
     width: 60vw;
