@@ -2,40 +2,7 @@
     @include titulo__secundario;
 }
 
-.habitaciones {
-    &__contenedor-card {
-        width: 100vw;
-        margin: 0 auto;
-        overflow: hidden;
-    }
 
-    &__card {
-        display: grid;
-        grid-template-columns: 90vw;
-        justify-content: center;
-        margin-bottom: 1rem;
-
-        &--servic {
-            @include flex(center, initial, initial);
-        }
-
-        &--tittle {
-            padding: 0.5rem;
-            margin-bottom: 0;
-            font-style: oblique;
-            font-weight: 100;
-        }
-
-        &--servic-img {
-            width: 60%;
-            margin: 2.5vh 0;
-        }
-
-        &--parrafo {
-            margin: 0 1rem 1rem 1rem;
-        }
-    }
-}
 
 .espacios {
 
@@ -124,18 +91,6 @@
                 width: 90vw;
                 margin: 0 auto;
             }
-        }
-
-        &__contenedor-card {
-            display: grid;
-            grid-template-columns: repeat(3, 30vw);
-            gap: 1vw;
-            justify-content: center;
-        }
-
-        &__card {
-            display: unset;
-            // grid-template-columns: 100%;
         }
 
         &__parrafo {
