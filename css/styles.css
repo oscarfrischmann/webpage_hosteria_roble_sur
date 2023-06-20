@@ -604,15 +604,17 @@ figure {
     display: flex;
     justify-content: center;
     align-items: initial;
-    flex-direction: inherit;
+    flex-direction: column;
     gap: 32px;
     width: 75vw;
     margin: 0 auto;
     padding: 4rem;
   }
+  .excursiones__video--youtube {
+    align-items: center;
+  }
   .excursiones__video--youtube iframe {
-    width: 560px;
-    height: 315px;
+    width: 100%;
   }
   .excursiones h2 {
     margin-top: 0;
@@ -665,6 +667,23 @@ figure {
   }
   .comidas img {
     margin-bottom: 0;
+  }
+  .excursiones {
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+    flex-direction: inherit;
+    gap: 32px;
+    width: 75vw;
+    margin: 0 auto;
+    padding: 4rem;
+  }
+  .excursiones__video--youtube iframe {
+    width: 560px;
+    height: 315px;
+  }
+  .excursiones h2 {
+    margin-top: 0;
   }
 }
 .reservas {

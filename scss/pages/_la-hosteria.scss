@@ -28,7 +28,6 @@
 @media (min-width:map-get($break, "tablet")) {
 
     .hosteria {
-
         &__section {
             margin-top: $margen-main;
             padding-bottom: $margen-main;
@@ -47,14 +46,12 @@
                 grid-column: 2/span 2;
                 grid-row: 1/2;
             }
-
         }
 
         &__contenedor-img {
             &--mobile {
                 display: none;
             }
-
 
             &--main {
                 width: 100%;
@@ -124,7 +121,6 @@
     }
 
     .comidas {
-
         display: grid;
         gap: 20px;
         justify-content: center;
@@ -156,16 +152,18 @@
     }
 
     .excursiones {
-        @include flex(center, initial, inherit);
+        @include flex(center, initial, column);
         gap: 32px;
         width: 75vw;
         margin: 0 auto;
         padding: $margen-main;
 
         &__video--youtube {
+            align-items: center;
+
             & iframe {
-                width: 560px;
-                height: 315px;
+                width: 100%;
+                
             }
         }
 
@@ -229,6 +227,25 @@
 
         & img {
             margin-bottom: 0;
+        }
+    }
+
+    .excursiones {
+        @include flex(center, initial, inherit);
+        gap: 32px;
+        width: 75vw;
+        margin: 0 auto;
+        padding: $margen-main;
+
+        &__video--youtube {
+            & iframe {
+                width: 560px;
+                height: 315px;
+            }
+        }
+
+        h2 {
+            margin-top: 0;
         }
     }
 }
