@@ -29,22 +29,14 @@
 
     .hosteria {
         &__section {
-            margin-top: $margen-main;
             padding-bottom: $margen-main;
         }
 
         &__article {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
-            grid-template-rows: 560px auto;
+            @include flex(space-around, center, column);
 
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                grid-column: 2/span 2;
-                grid-row: 1/2;
+                width: 80%;
             }
         }
 
@@ -53,22 +45,14 @@
                 display: none;
             }
 
-            &--main {
-                width: 100%;
-                height: 560px;
-                grid-column: 2/4;
-                place-self: end;
-                overflow: hidden;
-
-                & img {
-                    object-fit: cover;
-                    transform: translateY(-120px);
-                }
+            & img {
+                object-fit: cover;
+                transform: translateY(-120px);
             }
         }
 
         &__parrafo {
-            grid-column: -3/-1;
+            width: 80%;
 
             &--desktop {
                 margin: 1rem 0 0 0;
@@ -97,11 +81,11 @@
     .espacios {
         padding: $margen-main;
         @include flex(center, center, column);
-        
+
         h2 {
             margin-top: 0;
         }
-        
+
         &__encabezado {
             @include flex(inherit, inherit, column);
         }
@@ -116,7 +100,7 @@
 
         &__parrafo {
             margin: 0 auto 2rem auto;
-            width:83vw;
+            width: 83vw;
         }
     }
 
@@ -163,7 +147,6 @@
 
             & iframe {
                 width: 100%;
-                
             }
         }
 
@@ -174,78 +157,131 @@
 }
 
 @media (min-width:map-get($break, "desktop")) {
-
-
-    .espacios {
-        padding: $margen-main;
-        
-        @include flex(space-between, center, row);
-
-        &__parrafo {
-            width: 90%;
+    .hosteria {
+        &__section {
+            margin-top: $margen-main;
+            padding-bottom: $margen-main;
         }
 
-        &__encabezado {
-            align-self: flex-start;
-        }
-
-        &__galeria {
+        &__article {
             display: grid;
-            grid-template-columns: repeat(2, 30vw);
             justify-content: center;
-            column-gap: 30px;
-            row-gap: 10px;
-        }
-    }
+            grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
+            grid-template-rows: 560px auto;
 
-    .comidas {
-
-        display: grid;
-        gap: 20px;
-        justify-content: center;
-        grid-template-columns: repeat(3, 25vw);
-        grid-template-rows: repeat(2, 1fr);
-        padding: $margen-main 0;
-
-        &__encabezado {
-            @include flex(flex-start, center, column);
-            grid-row: 1/3;
-            grid-column: 3/4;
-        }
-
-        &__figure {
-            &--anteultima {
-                grid-column: 1/2;
-                grid-row: 2/3;
+            h2 {
+                align-self: start;
             }
 
-            &--ultima {
-                grid-column: 2/3;
-                grid-row: 2/3;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                grid-column: 2/span 2;
+                grid-row: 1/2;
             }
+
+        }
+        &__parrafo {
+            grid-column: -3/-1;
+            width: unset;
         }
 
-        & img {
-            margin-bottom: 0;
-        }
-    }
+        &__contenedor-img {
+            &--mobile {
+                display: none;
+            }
 
-    .excursiones {
-        @include flex(center, initial, inherit);
-        gap: 32px;
-        width: 75vw;
-        margin: 0 auto;
-        padding: $margen-main;
+            &--main {
+                width: 100%;
+                height: 560px;
+                grid-column: 2/4;
+                place-self: end;
+                overflow: hidden;
 
-        &__video--youtube {
-            & iframe {
-                width: 560px;
-                height: 315px;
+                & img {
+                    object-fit: cover;
+                    transform: translateY(-120px);
+                }
             }
         }
 
-        h2 {
-            margin-top: 0;
+        .espacios {
+            @include flex(space-between, center, row);
+            padding: $margen-main;
+
+            &__parrafo {
+                width: 90%;
+            }
+
+            &__encabezado {
+                align-self: flex-start;
+            }
+
+            &__galeria {
+                display: grid;
+                grid-template-columns: repeat(2, 30vw);
+                justify-content: center;
+                column-gap: 30px;
+                row-gap: 10px;
+            }
+        }
+
+        .comidas {
+            display: grid;
+            gap: 20px;
+            justify-content: center;
+            grid-template-columns: repeat(3, 22vw);
+            grid-template-rows: repeat(2, 1fr);
+            padding: $margen-main 0;
+
+            &__encabezado {
+                @include flex(initial, flex-start, column);
+                grid-row: 1/3;
+                grid-column: 3/4;
+                margin-left: 2rem;
+
+            }
+
+            &__parrafo {
+                margin: 0;
+            }
+
+
+            &__figure {
+                &--anteultima {
+                    grid-column: 1/2;
+                    grid-row: 2/3;
+                }
+
+                &--ultima {
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                }
+            }
+
+            & img {
+                margin-bottom: 0;
+            }
+        }
+
+        .excursiones {
+            @include flex(center, initial, inherit);
+            gap: 32px;
+            width: 75vw;
+            margin: 0 auto;
+            padding: $margen-main;
+
+            &__video--youtube {
+                & iframe {
+                    width: 560px;
+                    height: 315px;
+                }
+            }
+
+            h2 {
+                margin-top: 0;
+            }
         }
     }
 }

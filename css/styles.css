@@ -495,38 +495,26 @@ figure {
 
 @media (min-width: 768px) {
   .hosteria__section {
-    margin-top: 4rem;
     padding-bottom: 4rem;
   }
   .hosteria__article {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
-    grid-template-rows: 560px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
   }
   .hosteria__article img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    grid-column: 2/span 2;
-    grid-row: 1/2;
+    width: 80%;
   }
   .hosteria__contenedor-img--mobile {
     display: none;
   }
-  .hosteria__contenedor-img--main {
-    width: 100%;
-    height: 560px;
-    grid-column: 2/4;
-    place-self: end;
-    overflow: hidden;
-  }
-  .hosteria__contenedor-img--main img {
+  .hosteria__contenedor-img img {
     object-fit: cover;
     transform: translateY(-120px);
   }
   .hosteria__parrafo {
-    grid-column: -3/-1;
+    width: 80%;
   }
   .hosteria__parrafo--desktop {
     margin: 1rem 0 0 0;
@@ -621,54 +609,96 @@ figure {
   }
 }
 @media (min-width: 1296px) {
-  .espacios {
-    padding: 4rem;
+  .hosteria__section {
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .hosteria__article {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(300px, 30vw) repeat(2, 30vw);
+    grid-template-rows: 560px auto;
+  }
+  .hosteria__article h2 {
+    align-self: start;
+  }
+  .hosteria__article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 2/span 2;
+    grid-row: 1/2;
+  }
+  .hosteria__parrafo {
+    grid-column: -3/-1;
+    width: unset;
+  }
+  .hosteria__contenedor-img--mobile {
+    display: none;
+  }
+  .hosteria__contenedor-img--main {
+    width: 100%;
+    height: 560px;
+    grid-column: 2/4;
+    place-self: end;
+    overflow: hidden;
+  }
+  .hosteria__contenedor-img--main img {
+    object-fit: cover;
+    transform: translateY(-120px);
+  }
+  .hosteria .espacios {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 4rem;
   }
-  .espacios__parrafo {
+  .hosteria .espacios__parrafo {
     width: 90%;
   }
-  .espacios__encabezado {
+  .hosteria .espacios__encabezado {
     align-self: flex-start;
   }
-  .espacios__galeria {
+  .hosteria .espacios__galeria {
     display: grid;
     grid-template-columns: repeat(2, 30vw);
     justify-content: center;
     column-gap: 30px;
     row-gap: 10px;
   }
-  .comidas {
+  .hosteria .comidas {
     display: grid;
     gap: 20px;
     justify-content: center;
-    grid-template-columns: repeat(3, 25vw);
+    grid-template-columns: repeat(3, 22vw);
     grid-template-rows: repeat(2, 1fr);
     padding: 4rem 0;
   }
-  .comidas__encabezado {
+  .hosteria .comidas__encabezado {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: initial;
+    align-items: flex-start;
     flex-direction: column;
     grid-row: 1/3;
     grid-column: 3/4;
+    margin-left: 2rem;
   }
-  .comidas__figure--anteultima {
+  .hosteria .comidas__parrafo {
+    margin: 0;
+  }
+  .hosteria .comidas__figure--anteultima {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .comidas__figure--ultima {
+  .hosteria .comidas__figure--ultima {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .comidas img {
+  .hosteria .comidas img {
     margin-bottom: 0;
   }
-  .excursiones {
+  .hosteria .excursiones {
     display: flex;
     justify-content: center;
     align-items: initial;
@@ -678,11 +708,11 @@ figure {
     margin: 0 auto;
     padding: 4rem;
   }
-  .excursiones__video--youtube iframe {
+  .hosteria .excursiones__video--youtube iframe {
     width: 560px;
     height: 315px;
   }
-  .excursiones h2 {
+  .hosteria .excursiones h2 {
     margin-top: 0;
   }
 }
