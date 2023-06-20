@@ -2,7 +2,6 @@
     &__contenedor-card {
         width: 90vw;
         margin: 0 auto;
-        // overflow: hidden;
     }
 
     &__card {
@@ -35,21 +34,17 @@
 
 @media (min-width:map-get($break, "tablet")) {
 
-.habitaciones {
-    &__contenedor-card {
-        display: grid;
-        grid-template-columns: repeat(3, 28vw);
-        gap: 1vw;
-        justify-content: center;
-        overflow: hidden;
+    .habitaciones {
+        &__contenedor-card {
+            display: grid;
+            grid-template-columns: repeat(3, 28vw);
+            gap: 1vw;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        &__card {
+            display: unset;
+        }
     }
-
-    &__card {
-        display: unset;
-        // grid-template-columns: 100%;
-    }
-}
-
-
-
 }

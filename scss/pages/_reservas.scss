@@ -27,6 +27,7 @@
         border-style: solid;
         height: 40px;
         width: 100%;
+        
     }
 
     &__botones,
@@ -43,7 +44,7 @@
         border-radius: 8px;
 
         &:active {
-            background-color: rgb(24, 100, 241);
+            background-color: rgb(15, 59, 139);
         }
     }
 }
@@ -53,6 +54,7 @@
     .reservas {
         &__section {
             @include flex(space-around, flex-start, row);
+            gap: 20px;
         }
 
         &__titulo {
@@ -69,7 +71,7 @@
 
         &__form {
             width: 40vw;
-            margin-top: 160px;
+            margin-top: 181px;
         }
     }
 }

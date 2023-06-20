@@ -27,20 +27,21 @@ h2 {
 
     .ubicacion {
         grid-template-rows: 1fr 3fr 1fr;
-        width: 50vw;
-
+        width: 80vw;
     }
 
     .footer {
         &__ubicacion {
 
-            &--ubic {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
             &--none {
                 display: none;
             }
         }
+    }
+}
+
+@media (min-width: map-get($break, "inter")) {
+    .footer__ubicacion--ubic {
+        grid-template-columns: repeat(3, 1fr);
     }
 }

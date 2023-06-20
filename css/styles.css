@@ -442,14 +442,14 @@ figure {
     display: grid;
     justify-content: center;
     grid-template-columns: 40vw 40vw;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
     grid-template-areas: "titulo foto" "parrafo foto";
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
   .nosotros__img {
     grid-area: foto;
-    width: 70%;
+    width: 100%;
   }
   .nosotros__titulo {
     text-align: start;
@@ -464,6 +464,11 @@ figure {
     grid-area: parrafo;
     margin: 0 4rem;
     line-height: 2.5rem;
+  }
+}
+@media (min-width: 1296px) {
+  .nosotros__img {
+    width: 75%;
   }
 }
 .hosteria h2 {
@@ -763,7 +768,7 @@ figure {
   border-radius: 8px;
 }
 .reservas .boton:active {
-  background-color: rgb(24, 100, 241);
+  background-color: rgb(15, 59, 139);
 }
 
 @media (min-width: 992px) {
@@ -772,6 +777,7 @@ figure {
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
+    gap: 20px;
   }
   .reservas__titulo {
     display: flex;
@@ -788,7 +794,7 @@ figure {
   }
   .reservas__form {
     width: 40vw;
-    margin-top: 160px;
+    margin-top: 181px;
   }
 }
 .ubicacion {
@@ -821,13 +827,15 @@ h2 {
 @media (min-width: 768px) {
   .ubicacion {
     grid-template-rows: 1fr 3fr 1fr;
-    width: 50vw;
-  }
-  .footer__ubicacion--ubic {
-    grid-template-columns: repeat(3, 1fr);
+    width: 80vw;
   }
   .footer__ubicacion--none {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .footer__ubicacion--ubic {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
