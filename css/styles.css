@@ -58,7 +58,7 @@ figure {
   font-size: 1.2rem;
 }
 
-.box-shadow, .contenedor img {
+.box-shadow, .galeria img {
   box-shadow: 2px 2px 5px;
 }
 
@@ -845,13 +845,19 @@ h2 {
   flex-direction: column;
   gap: 1rem;
   margin-bottom: 4rem;
-}
-.contenedor img {
-  border-radius: 20px;
+  overflow: hidden;
 }
 
 .galeria img {
   width: 25%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 1.5s;
+}
+.galeria img:hover {
+  transition: 3s;
+  width: 50%;
+  margin: 1rem;
 }
 .galeria__uno {
   display: flex;

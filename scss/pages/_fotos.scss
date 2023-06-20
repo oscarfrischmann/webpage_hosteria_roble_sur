@@ -4,16 +4,22 @@
     @include flex(center, unset, column);
     gap: 1rem;
     margin-bottom: $margen-main;
-
-    img {
-        border-radius: 20px;
-        @extend .box-shadow;
-    }
+    overflow: hidden;
 }
 
 .galeria {
     img {
         width: 25%;
+        object-fit: cover;
+        border-radius: 20px;
+        @extend .box-shadow;
+        transition: 1.5s;
+    }
+
+    img:hover {
+        transition: 3s;
+        width: 50%;
+        margin: 1rem;
     }
     
     &__uno {
@@ -37,3 +43,4 @@
         gap: 1rem;
     }
 }
+
