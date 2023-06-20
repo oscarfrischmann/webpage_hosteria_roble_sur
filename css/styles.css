@@ -58,7 +58,7 @@ figure {
   font-size: 1.2rem;
 }
 
-.box-shadow {
+.box-shadow, .contenedor img {
   box-shadow: 2px 2px 5px;
 }
 
@@ -837,6 +837,56 @@ h2 {
   .footer__ubicacion--ubic {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.contenedor img {
+  border-radius: 20px;
+}
+
+.galeria img {
+  width: 25%;
+}
+.galeria__uno {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: row;
+  gap: 1rem;
+}
+.galeria__dos {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: row;
+  gap: 1rem;
+}
+.galeria__tres {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: row;
+  gap: 1rem;
+}
+.galeria__cuatro {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: row;
+  gap: 1rem;
+}
+.galeria__cinco {
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
