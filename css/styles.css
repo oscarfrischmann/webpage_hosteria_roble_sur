@@ -767,6 +767,9 @@ figure {
   color: aliceblue;
   border-radius: 8px;
 }
+.reservas .boton:hover {
+  background-color: rgb(15, 59, 139);
+}
 .reservas .boton:active {
   background-color: rgb(15, 59, 139);
 }
