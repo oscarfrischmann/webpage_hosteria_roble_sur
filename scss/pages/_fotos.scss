@@ -1,46 +1,92 @@
 
+    .contenedor {
+        @include flex(center, unset, column);
+        gap: 1rem;
+        margin-bottom: $margen-main;
+        overflow: hidden;
+    }
 
-.contenedor {
-    @include flex(center, unset, column);
-    gap: 1rem;
-    margin-bottom: $margen-main;
-    overflow: hidden;
+    .galeria {
+        img {
+            width: 25%;
+            object-fit: cover;
+            border-radius: 20px;
+            @extend .box-shadow;
+            transition: 1.5s;
+        }
+
+        img:hover {
+            transition: 3s;
+            width: 50%;
+            // margin: 1rem;
+        }
+
+        &__uno {
+            @include flex(center, unset, row);
+            gap: 1rem;
+        }
+
+        &__dos {
+            @include flex(center, unset, row);
+            gap: 1rem;
+        }
+
+        &__tres {
+            @include flex(center, unset, row);
+            gap: 1rem;
+        }
+
+        &__cuatro {
+            @include flex(center, unset, row);
+            gap: 1rem;
+        }
+
+        &__cinco {
+            @include flex(center, unset, row);
+            gap: 1rem;
+        }
+    }
+
+@media (max-width: map-get($break, "inter")){
+
+    .galeria {
+        img {
+            width: 70%;
+            object-fit: cover;
+            border-radius: 20px;
+            @extend .box-shadow;
+            transition: 1.5s;
+        }
+
+        img:hover {
+            transition: 3s;
+            width: 95%;
+            // margin: 1rem;
+        }
+
+        &__uno {
+            @include flex(center, center, column);
+            gap: 1rem;
+        }
+
+        &__dos {
+            @include flex(center,center, column);
+            gap: 1rem;
+        }
+
+        &__tres {
+            @include flex(center,center, column);
+            gap: 1rem;
+        }
+
+        &__cuatro {
+            @include flex(center,center, column);
+            gap: 1rem;
+        }
+
+        &__cinco {
+            @include flex(center,center, column);
+            gap: 1rem;
+        }
+    }
 }
-
-.galeria {
-    img {
-        width: 25%;
-        object-fit: cover;
-        border-radius: 20px;
-        @extend .box-shadow;
-        transition: 1.5s;
-    }
-
-    img:hover {
-        transition: 3s;
-        width: 50%;
-        margin: 1rem;
-    }
-    
-    &__uno {
-        @include flex(center, unset, row);
-        gap: 1rem;
-    }
-    &__dos {
-        @include flex(center, unset, row);
-        gap: 1rem;
-    }
-    &__tres {
-        @include flex(center, unset, row);
-        gap: 1rem;
-    }
-    &__cuatro {
-        @include flex(center, unset, row);
-        gap: 1rem;
-    }
-    &__cinco {
-        @include flex(center, unset, row);
-        gap: 1rem;
-    }
-}
-
