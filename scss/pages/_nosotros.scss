@@ -24,7 +24,6 @@
 
     &__titulo {
         @include titulo__secundario;
-        // margin-bottom: 0;
     }
 
     &__subtitulo {
@@ -37,7 +36,6 @@
 @media (min-width:map-get($break, "inter")) {
 
     .nosotros {
-
         &__section {
             display: grid;
             justify-content: center;
@@ -60,6 +58,7 @@
             margin: 0 $margen-main;
             line-height: unset;
         }
+
         &__subtitulo {
             text-align: start;
             margin: 0 $margen-main;

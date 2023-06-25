@@ -62,7 +62,7 @@ a {
 }
 
 ul,
-ol {
+ol { //Marco dijo que no debería darle margin porque ya estaba declara en el *, pero por alguna razón lo necesita. Creo que es algo de bootstrap
     margin-bottom: 0;
     padding: 0;
     list-style-type: none;
@@ -77,7 +77,7 @@ p {
     line-height: 2rem;
 }
 
-figure {
+figure { //mismo q ul, ol
     margin: 0;
 }
 

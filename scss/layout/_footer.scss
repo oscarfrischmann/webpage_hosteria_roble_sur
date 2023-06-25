@@ -142,6 +142,7 @@
             // width: 25vw;
             height: 270px;
             font-size: 1.5rem;
+            padding-left: 5px;
 
             & ul {
                 place-self: center;
@@ -191,6 +192,7 @@
             &--index {
                 position: unset;
                 align-self: center;
+                padding-right: 15px;
             }
         }
     }

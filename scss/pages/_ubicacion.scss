@@ -30,14 +30,16 @@ h2 {
         width: 80vw;
     }
 
-    .footer {
-        &__ubicacion {
-
-            &--none {
-                display: none;
-            }
-        }
+    .footer__ubicacion--none {
+        display:none;
     }
+    // .footer {
+    //     &__ubicacion {
+    //         &--none {
+    //             display: none;
+    //         }
+    //     }
+    // }
 }
 
 @media (min-width: map-get($break, "inter")) {

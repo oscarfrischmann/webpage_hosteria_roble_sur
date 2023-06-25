@@ -1,53 +1,58 @@
+.contenedor {
+    @include flex(center, unset, column);
+    gap: 1rem;
+    margin-bottom: $margen-main;
+    overflow: hidden;
+}
 
-    .contenedor {
-        @include flex(center, unset, column);
+.galeria {
+    img {
+        width: 25%;
+        object-fit: cover;
+        border-radius: 20px;
+        @extend .box-shadow;
+        transition: 1.5s;
+    }
+
+    img:hover {
+        transition: 3s;
+        width: 50%;
+    }
+
+    &__uno {
+        @include flex(center, unset, row);
         gap: 1rem;
-        margin-bottom: $margen-main;
-        overflow: hidden;
     }
 
-    .galeria {
-        img {
-            width: 25%;
-            object-fit: cover;
-            border-radius: 20px;
-            @extend .box-shadow;
-            transition: 1.5s;
-        }
-
-        img:hover {
-            transition: 3s;
-            width: 50%;
-            // margin: 1rem;
-        }
-
-        &__uno {
-            @include flex(center, unset, row);
-            gap: 1rem;
-        }
-
-        &__dos {
-            @include flex(center, unset, row);
-            gap: 1rem;
-        }
-
-        &__tres {
-            @include flex(center, unset, row);
-            gap: 1rem;
-        }
-
-        &__cuatro {
-            @include flex(center, unset, row);
-            gap: 1rem;
-        }
-
-        &__cinco {
-            @include flex(center, unset, row);
-            gap: 1rem;
-        }
+    &__dos {
+        @include flex(center, unset, row);
+        gap: 1rem;
+        margin: 0 10px;
     }
 
-@media (max-width: map-get($break, "inter")){
+    &__tres {
+        @include flex(center, unset, row);
+        gap: 1rem;
+    }
+
+    &__cuatro {
+        @include flex(center, unset, row);
+        gap: 1rem;
+        margin: 0 10px;
+    }
+
+    &__cinco {
+        @include flex(center, unset, row);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: map-get($break, "inter")) {
+
+    :root {
+        --animate-duration: 0;
+        --animate-delay: 0s;
+    }
 
     .galeria {
         img {
@@ -70,22 +75,22 @@
         }
 
         &__dos {
-            @include flex(center,center, column);
+            @include flex(center, center, column);
             gap: 1rem;
         }
 
         &__tres {
-            @include flex(center,center, column);
+            @include flex(center, center, column);
             gap: 1rem;
         }
 
         &__cuatro {
-            @include flex(center,center, column);
+            @include flex(center, center, column);
             gap: 1rem;
         }
 
         &__cinco {
-            @include flex(center,center, column);
+            @include flex(center, center, column);
             gap: 1rem;
         }
     }

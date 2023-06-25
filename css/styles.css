@@ -294,6 +294,7 @@ figure {
     background-color: rgba(232, 231, 221, 0.5843137255);
     height: 270px;
     font-size: 1.5rem;
+    padding-left: 5px;
   }
   .footer__navs ul {
     place-self: center;
@@ -337,6 +338,7 @@ figure {
   .footer__adress--index {
     position: unset;
     align-self: center;
+    padding-right: 15px;
   }
 }
 .habitaciones__contenedor-card {
@@ -874,6 +876,7 @@ h2 {
   align-items: unset;
   flex-direction: row;
   gap: 1rem;
+  margin: 0 10px;
 }
 .galeria__tres {
   display: flex;
@@ -888,6 +891,7 @@ h2 {
   align-items: unset;
   flex-direction: row;
   gap: 1rem;
+  margin: 0 10px;
 }
 .galeria__cinco {
   display: flex;
@@ -898,6 +902,10 @@ h2 {
 }
 
 @media (max-width: 992px) {
+  :root {
+    --animate-duration: 0;
+    --animate-delay: 0s;
+  }
   .galeria img {
     width: 70%;
     object-fit: cover;
