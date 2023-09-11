@@ -108,7 +108,7 @@ figure {
 @media (min-width: 768px) {
   .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: initial;
   }
@@ -116,7 +116,7 @@ figure {
     display: none;
   }
   .header__logo img {
-    padding: 8px 16px;
+    width: unset;
   }
   .header__navs {
     display: flex;
@@ -344,7 +344,6 @@ figure {
 .habitaciones__contenedor-card {
   width: 90vw;
   margin: 0 auto;
-  overflow: hidden;
 }
 .habitaciones__card {
   display: grid;

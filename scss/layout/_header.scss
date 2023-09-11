@@ -41,22 +41,23 @@
 @media (min-width: map-get($break, "tablet")) {
 
     .header {
-        @include flex(space-between, center, initial);
+        @include flex(space-around, center, initial);
 
         &__burger {
             display: none;
         }
 
         &__logo img {
-            padding: 8px 16px;
+            // padding: 8px 16px;
+            width: unset;
         }
 
         &__navs {
-            @include flex(inherit, center,inherit);
+            @include flex(inherit, center, inherit);
             gap: 30px;
 
             &-pages {
-                @include flex(inherit, center,inherit);
+                @include flex(inherit, center, inherit);
                 gap: 2px;
 
                 & li {
@@ -65,6 +66,7 @@
                     border-radius: 5px;
                     transition: font-size 3s, background 1s;
                     padding: 8px;
+                    // white-space: nowrap;
 
                     &:hover {
                         background-color: rgba(134, 124, 167, 0.314);
@@ -80,13 +82,15 @@
         }
     }
 }
-@media (min-width: map-get($break, "inter")){
+
+@media (min-width: map-get($break, "inter")) {
     .header__navs-pages li {
         font-size: 1.5rem;
         padding: 15px;
     }
-    
+
 }
+
 @media (min-width: map-get($break, "desktop")) {
     .header__navs-pages li {
         font-size: 2rem;
