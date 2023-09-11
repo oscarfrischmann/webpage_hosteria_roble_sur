@@ -12,6 +12,7 @@ Conocimientos aplicados:
   - Bootstrap
   - SASS
   - BEM
+  - JavaScript
 
 Hostería Roble Sur V.1.0 beta (15/6/2023)
 
