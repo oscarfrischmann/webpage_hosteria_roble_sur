@@ -1,1 +1,4 @@
 css/styles2.css
+*.json
+node_modules/
+*.map
