@@ -18,3 +18,14 @@ const footerNavs = document.querySelectorAll('.ul-nav li a');
 footerNavs.forEach((e, i) => {
     e.textContent = navTexts[i];
 })
+
+const phoneNum = document.querySelectorAll('.footer__contact-list--index span');
+phoneNum[0].textContent = '54 0 2902 495559';
+phoneNum[1].innerHTML = '<a href="wa.me/5492966723683">+54 9 2966 723683</a>';
+phoneNum[2].innerHTML = '<a href="mailto:info@roblesur.com.ar">info@roblesur.com.ar</a>';
+
+const mediaIcons = document.querySelectorAll('.footer__media-icons li a')
+mediaIcons[0].setAttribute('href', 'https://www.facebook.com/100063781770288')
+mediaIcons[1].setAttribute('href', 'https://wa.me/5492966723683')
+mediaIcons[2].setAttribute('href', 'https://www.instagram.com/hosteria.roblesur/')
+mediaIcons[3].setAttribute('href', 'https://www.tripadvisor.com.ar/Hotel_Review-g312851-d670899-Reviews-Roble_Sur-El_Calafate_Province_of_Santa_Cruz_Patagonia.html?m=19905')

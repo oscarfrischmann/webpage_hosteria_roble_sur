@@ -116,7 +116,7 @@ figure {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: initial;
+    flex-direction: row;
   }
   .header__burger {
     display: none;
@@ -148,7 +148,7 @@ figure {
   .header__navs-pages li:hover {
     font-size: 1.6rem;
   }
-  .header__navs-pages-lang ul {
+  .header__navs-lang ul {
     display: flex;
     justify-content: inherit;
     align-items: center;

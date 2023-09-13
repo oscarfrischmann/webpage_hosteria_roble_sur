@@ -49,7 +49,7 @@
 @media (min-width: map-get($break, "tablet")) {
 
     .header {
-        @include flex(space-around, center, initial);
+        @include flex(space-around, center, row);
 
         &__burger {
             display: none;
@@ -82,12 +82,12 @@
                         font-size: 1.6rem;
                     }
                 }
+            }
 
-                &-lang ul {
-                    @include flex(inherit, center, column);
-                    gap: initial;
-                    margin-right: 30px;
-                }
+            &-lang ul {
+                @include flex(inherit, center, column);
+                gap: initial;
+                margin-right: 30px;
             }
         }
     }
