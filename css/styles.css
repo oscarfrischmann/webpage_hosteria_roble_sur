@@ -405,6 +405,7 @@ figure {
   border-radius: 10px;
   color: azure;
   font-weight: 700;
+  cursor: pointer;
 }
 .login #messages {
   display: flex;

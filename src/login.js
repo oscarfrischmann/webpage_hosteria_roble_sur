@@ -52,7 +52,7 @@ signInButton.addEventListener('click', () => {
 			})();
 			// IdP data available using getAdditionalUserInfo(result)
 			// ...
-			console.log(getMensajes(db));
+			console.log(getMessages(db));
 		})
 		.catch((error) => {
 			// Handle Errors here.
@@ -72,7 +72,7 @@ signOutButton.addEventListener('click', () => {
 	signOut(auth)
 		.then(() => {
 			console.log('Signed Out succesfully');
-			console.log(getMensajes(db));
+			console.log(getMessages(db));
 		})
 		.catch((error) => {
 			console.log('We couldn´t sign you Out', error);
@@ -91,14 +91,14 @@ onAuthStateChanged(auth, (user) => {
 
 //GET INFO
 const msgContainer = document.getElementById('messages');
-
-async function getMensajes(db) {
+let allMessagesInDB;
+async function getMessages(db) {
 	try {
 		const mensajes = collection(db, 'contacto');
 		const mensajesSnapshot = await getDocs(mensajes);
-		const cityList = mensajesSnapshot.docs.map((doc) => doc.data());
-		console.log(cityList);
-		cityList.forEach((msg) => {
+		allMessagesInDB = mensajesSnapshot.docs.map((doc) => doc.data());
+		console.log(allMessagesInDB);
+		allMessagesInDB.forEach((msg) => {
 			let newMsgDiv = document.createElement('div');
 			newMsgDiv.className = 'msgContainer';
 
@@ -128,16 +128,16 @@ async function getMensajes(db) {
 			newMsgDiv.appendChild(phoneNumber);
 			newMsgDiv.appendChild(text);
 		});
-		return cityList;
+		return allMessagesInDB;
 	} catch (e) {
 		console.error('Error getting documents', e);
 	}
 }
-// console.log(getMensajes(db));
+// console.log(getMessages(db));
 const getData = document.getElementById('getData');
 
 getData.addEventListener('click', () => {
-	getMensajes(db);
+	getMessages(db);
 });
 
 console.log('merd');
