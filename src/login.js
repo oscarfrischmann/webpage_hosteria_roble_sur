@@ -89,11 +89,45 @@ onAuthStateChanged(auth, (user) => {
 	}
 });
 
+//GET INFO
+const msgContainer = document.getElementById('messages');
+
 async function getMensajes(db) {
 	try {
 		const mensajes = collection(db, 'contacto');
 		const mensajesSnapshot = await getDocs(mensajes);
 		const cityList = mensajesSnapshot.docs.map((doc) => doc.data());
+		console.log(cityList);
+		cityList.forEach((msg) => {
+			let newMsgDiv = document.createElement('div');
+			newMsgDiv.className = 'msgContainer';
+
+			const name = document.createElement('span');
+			name.textContent = `${msg.nombre}`;
+
+			const email = document.createElement('span');
+			email.textContent = ` ${msg.email}`;
+
+			const checkIn = document.createElement('span');
+			checkIn.textContent = ` Check In:   ${msg.checkIn}`;
+
+			const checkOut = document.createElement('span');
+			checkOut.textContent = ` Check Out:   ${msg.checkOut}`;
+
+			const phoneNumber = document.createElement('span');
+			phoneNumber.textContent = ` ${msg.phoneNumber}`;
+
+			const text = document.createElement('span');
+			text.textContent = ` ${msg.message}`;
+
+			msgContainer.appendChild(newMsgDiv);
+			newMsgDiv.appendChild(name);
+			newMsgDiv.appendChild(email);
+			newMsgDiv.appendChild(checkIn);
+			newMsgDiv.appendChild(checkOut);
+			newMsgDiv.appendChild(phoneNumber);
+			newMsgDiv.appendChild(text);
+		});
 		return cityList;
 	} catch (e) {
 		console.error('Error getting documents', e);
@@ -101,6 +135,9 @@ async function getMensajes(db) {
 }
 // console.log(getMensajes(db));
 const getData = document.getElementById('getData');
-getData.addEventListener('click', () => console.log(getMensajes(db)));
+
+getData.addEventListener('click', () => {
+	getMensajes(db);
+});
 
 console.log('merd');

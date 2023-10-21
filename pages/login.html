@@ -10,10 +10,14 @@
     <title>Log In</title>
 </head>
 
-<body>
-    <button class="boton" id="googleLogIn">iniciar sesión</button>
-    <button class="boton" id="googleLogOut">cerrar sesión</button>
-    <button class="boton" id="getData">ver mensajes</button>
+<body class="login">
+    <div class="login__buttons">
+        <button class="login__button login__button-iniciar" id="googleLogIn">iniciar sesión</button>
+        <button class="login__button login__button-cerrar" id="googleLogOut">cerrar sesión</button>
+        <button class="login__button login__button-get" id="getData">ver mensajes</button>
+    </div>
+    <div id="messages"></div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
