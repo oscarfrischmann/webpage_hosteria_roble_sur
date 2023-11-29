@@ -12,16 +12,17 @@ import {
 	getDocs,
 	doc,
 	setDoc,
+	deleteDoc,
 } from 'https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js';
 
 // Your web app's Firebase configuration
 const firebaseConfig = initializeApp({
-	apiKey: 'AIzaSyCR2Nr0OQR4QvuiiqWOL8qiLrnyE1bZPPc',
-	authDomain: 'prueba-e8593.firebaseapp.com',
-	projectId: 'prueba-e8593',
-	storageBucket: 'prueba-e8593.appspot.com',
-	messagingSenderId: '57030392360',
-	appId: '1:57030392360:web:24135666d3097888e9131d',
+	apiKey: 'AIzaSyC-Vugn6OZcEOZuRhwO4DcX6jQ1UrPgADM',
+	authDomain: 'hosteria-roblesur.firebaseapp.com',
+	projectId: 'hosteria-roblesur',
+	storageBucket: 'hosteria-roblesur.appspot.com',
+	messagingSenderId: '587587113540',
+	appId: '1:587587113540:web:98f34cdf522d748b9ce211',
 });
 
 // Initialize Firebase
@@ -43,16 +44,13 @@ signInButton.addEventListener('click', () => {
 			const userID = { userID: user.uid };
 			(async function () {
 				try {
-					await setDoc(doc(db, 'Users', user.displayName), userID).then(
-						console.log('User ID added')
-					);
+					await setDoc(doc(db, 'Users', user.displayName), userID).then();
 				} catch (e) {
 					console.error('User ID NOT added: ', e);
 				}
 			})();
 			// IdP data available using getAdditionalUserInfo(result)
 			// ...
-			console.log(getMessages(db));
 		})
 		.catch((error) => {
 			// Handle Errors here.
@@ -84,6 +82,7 @@ onAuthStateChanged(auth, (user) => {
 	if (user != null) {
 		console.log('User Logged In');
 		console.log(user);
+		getMessages(db);
 	} else {
 		console.log('No User Logged In');
 	}
@@ -95,10 +94,17 @@ let allMessagesInDB;
 async function getMessages(db) {
 	try {
 		const mensajes = collection(db, 'contacto');
+
 		const mensajesSnapshot = await getDocs(mensajes);
+		console.log(mensajesSnapshot);
 		allMessagesInDB = mensajesSnapshot.docs.map((doc) => doc.data());
+		const withID = mensajesSnapshot.docs.map((doc) => doc.id);
+		console.log(withID);
 		console.log(allMessagesInDB);
-		allMessagesInDB.forEach((msg) => {
+
+		allMessagesInDB.forEach((msg, i) => {
+			msg.id = withID[i];
+
 			let newMsgDiv = document.createElement('div');
 			newMsgDiv.className = 'msgContainer';
 
@@ -109,10 +115,10 @@ async function getMessages(db) {
 			email.textContent = ` ${msg.email}`;
 
 			const checkIn = document.createElement('span');
-			checkIn.textContent = ` Check In:   ${msg.checkIn}`;
+			checkIn.textContent = ` In:   ${msg.checkIn}`;
 
 			const checkOut = document.createElement('span');
-			checkOut.textContent = ` Check Out:   ${msg.checkOut}`;
+			checkOut.textContent = ` Out:   ${msg.checkOut}`;
 
 			const phoneNumber = document.createElement('span');
 			phoneNumber.textContent = ` ${msg.phoneNumber}`;
@@ -127,7 +133,24 @@ async function getMessages(db) {
 			newMsgDiv.appendChild(checkOut);
 			newMsgDiv.appendChild(phoneNumber);
 			newMsgDiv.appendChild(text);
+
+			const deleteMsg = document.createElement('button');
+			deleteMsg.innerHTML = 'Borrar mensaje';
+			deleteMsg.setAttribute('data-id', msg.id);
+			newMsgDiv.appendChild(deleteMsg);
 		});
+		const deleteButtons = document.querySelectorAll('#messages button ');
+		console.log(deleteButtons);
+		for (let btn of deleteButtons) {
+			btn.addEventListener('click', async ({ target: { dataset } }) => {
+				console.log(dataset);
+				await deleteDoc(doc(db, 'contacto', dataset.id));
+				// deleteMsg(dataset.id);
+				setTimeout(() => {
+					location.reload();
+				}, 1000);
+			});
+		}
 		return allMessagesInDB;
 	} catch (e) {
 		console.error('Error getting documents', e);
@@ -137,7 +160,9 @@ async function getMessages(db) {
 const getData = document.getElementById('getData');
 
 getData.addEventListener('click', () => {
-	getMessages(db);
+	// getMessages(db).then((result) => console.log(result));
+	location.reload();
 });
-
-console.log('merd');
+function deleteMsg(tg) {
+	deleteDoc(doc(db, 'contacto', tg));
+}

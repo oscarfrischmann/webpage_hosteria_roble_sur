@@ -16,12 +16,12 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = initializeApp({
-	apiKey: 'AIzaSyCR2Nr0OQR4QvuiiqWOL8qiLrnyE1bZPPc',
-	authDomain: 'prueba-e8593.firebaseapp.com',
-	projectId: 'prueba-e8593',
-	storageBucket: 'prueba-e8593.appspot.com',
-	messagingSenderId: '57030392360',
-	appId: '1:57030392360:web:24135666d3097888e9131d',
+	apiKey: 'AIzaSyC-Vugn6OZcEOZuRhwO4DcX6jQ1UrPgADM',
+	authDomain: 'hosteria-roblesur.firebaseapp.com',
+	projectId: 'hosteria-roblesur',
+	storageBucket: 'hosteria-roblesur.appspot.com',
+	messagingSenderId: '587587113540',
+	appId: '1:587587113540:web:98f34cdf522d748b9ce211',
 });
 
 //LUXON
