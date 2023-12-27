@@ -34,3 +34,9 @@ mediaIcons[3].setAttribute(
 	'https://www.tripadvisor.com.ar/Hotel_Review-g312851-d670899-Reviews-Roble_Sur-El_Calafate_Province_of_Santa_Cruz_Patagonia.html?m=19905'
 );
 
+function googleTranslateElementInit() {
+	new google.translate.TranslateElement(
+		{ pageLanguage: 'en' },
+		'google-translate-element'
+	);
+}
